@@ -70,13 +70,31 @@
             }
             
         }
+        ,{
+            "path" : "pages/musicDetail/musicDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/bookDetail/bookDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#fff",
 		"backgroundColor": "#F8F8F8",
-		"navigationStyle": "custom"
+		"navigationStyle": "custom" 
 	},
 	"uniIdRouter": {},
 	"tabBar": {

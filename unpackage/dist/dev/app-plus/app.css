@@ -2024,3 +2024,7 @@ from {
 	animation-duration: 1s;
 	animation-fill-mode: both;
 }
+.night-theme {
+	background-color: #4c5662;
+	color: #c1cbcd;
+}

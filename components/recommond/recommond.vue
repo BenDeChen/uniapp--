@@ -2,7 +2,7 @@
 	<view>
 		<view class="flex align-center">
 			<block v-for="(item,index) in Rebooks" :key="index">
-				<view class="flex flex-column align-center flex-1 position-relative">
+				<view class="flex flex-column align-center flex-1 position-relative" @tap="toBookDetail(index)">
 					<image :src="item.src" mode="widthFix" class="w-100"></image>
 					<text class="font my-1 text-light-black">{{item.name}}</text>
 					<myIcon type="icon-erji" iconColor="text-light-white" class="position-absolute" style="left: 45rpx;top: 20rpx;;"></myIcon>
@@ -25,6 +25,15 @@
 			return {
 				
 			};
+		},
+		methods:{
+			toBookDetail(i) {
+				if(i === 0) {
+					uni.navigateTo({
+						url: "/pages/bookDetail/bookDetail"
+					})
+				}
+			}
 		}
 	}
 </script>

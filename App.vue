@@ -18,4 +18,5 @@
 	@import url("static/css/iconfont.css");
 	@import url("static/css/animate.css");
 	@import url("static/css/myanimate.css");
+	@import url("static/css/theme.css");
 </style>
