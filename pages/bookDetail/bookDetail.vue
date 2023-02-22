@@ -1,7 +1,7 @@
 <template>
 	<view>
-		<pageTitle theme="greyThueme">图书详情</pageTitle>
-		<view class="greyThueme flex align-center py-2" style="height: 250rpx;background-color: #a8b0c3;">
+		<pageTitle class="cal" theme="greyThueme">图书详情</pageTitle>
+		<view class="greyThueme flex align-center py-2 cal" style="height: 250rpx;background-color: #a8b0c3;">
 			<image src="../../static/Rebook/Rebook1.jpg" mode="widthFix" lazy-load class="flex-1 mx-2 rounded"></image>
 			<view class="flex-2 mx-2" style="">
 				<view style="font-size: 45rpx;">{{name}}</view>
@@ -12,9 +12,9 @@
 				</view>
 			</view>
 		</view>
-		<view class="shadow" style="height: 1210rpx;">
-			<tabTop :tabArr="['详情','目录']" @getTabIndex="getTabIndex"></tabTop>
-			<scroll-view scroll-y v-if="tabIndex === 0" class="animated" style="height: 1120rpx;">
+		<view class="shadow">
+			<tabTop :tabArr="['详情','目录']" @getTabIndex="getTabIndex" class="cal"></tabTop>
+			<scroll-view scroll-y v-if="tabIndex === 0" class="animated" :style="{height: calHeight + 'rpx',}">
 				<view>
 					<view class="py-2 flex justify-center text-light-black">--简介--</view>
 					<view class="px-2 font-lg " style="line-height: 80rpx;">{{synopsis}}</view>
@@ -22,7 +22,7 @@
 			</scroll-view>
 			<scroll-view scroll-y v-else style="height: 1120rpx;">
 				<block v-for="(item,index) in chapterCatalog" :key="item.id">
-					<view class="p-2 text-ellipsis border-bottom" hover-class="bg-light">
+					<view class="p-2 text-ellipsis border-bottom" hover-class="bg-light" @tap="toReading(item.id)">
 						{{item.title}}
 					</view>
 				</block>
@@ -33,9 +33,11 @@
 
 <script>
 	import test from "../../static/test.js"
+	import $u from "../../static/unit.js"
 	export default {
 		data() {
 			return {
+				calHeight:0,
 				name: test.name,
 				author: test.author,
 				synopsis: test.synopsis,
@@ -43,9 +45,21 @@
 				tabIndex: 0
 			}
 		},
+		mounted() {
+			$u.calSurplusHeight(({
+				pageId: this,
+				pos:'cal',
+				success: val=> this.calHeight = val
+			}))
+		},
 		methods: {
 			getTabIndex(index) {
 				this.tabIndex = index
+			},
+			toReading(id) {
+				uni.navigateTo({
+					url: `/pages/reading/reading?chapterID=${id}`
+				})
 			}
 		}
 	}
