@@ -13,20 +13,31 @@
 			</view>
 		</view>
 		<view class="shadow">
-			<tabTop :tabArr="['详情','目录']" @getTabIndex="getTabIndex" class="cal"></tabTop>
-			<scroll-view scroll-y v-if="tabIndex === 0" class="animated" :style="{height: calHeight + 'rpx',}">
-				<view>
-					<view class="py-2 flex justify-center text-light-black">--简介--</view>
-					<view class="px-2 font-lg " style="line-height: 80rpx;">{{synopsis}}</view>
-				</view>
-			</scroll-view>
-			<scroll-view scroll-y v-else style="height: 1120rpx;">
-				<block v-for="(item,index) in chapterCatalog" :key="item.id">
-					<view class="p-2 text-ellipsis border-bottom" hover-class="bg-light" @tap="toReading(item.id)">
-						{{item.title}}
-					</view>
-				</block>
-			</scroll-view>
+			<tabTop :tabArr="['详情','目录']" @getTabIndex="getTabIndex" :tabIndex="tabIndex" class="cal"></tabTop>
+			<swiper :style="{height: calHeight + 'rpx',}" :current="tabIndex" @change="swiperCurrentChange">
+				<swiper-item >
+					<!-- 详情 -->
+					<scroll-view scroll-y class="animated">
+						<view>
+							<view class="py-2 flex justify-center text-light-black">--简介--</view>
+							<view class="px-2 font-lg " style="line-height: 80rpx;">{{synopsis}}</view>
+						</view>
+					</scroll-view>
+				</swiper-item>
+				<swiper-item>
+					<!-- 目录 -->
+					<scroll-view scroll-y style="height: 1120rpx;">
+						<block v-for="(item,index) in chapterCatalog" :key="item.id">
+							<view class="p-2 text-ellipsis border-bottom" hover-class="bg-light"
+								@tap="toReading(item.id)">
+								{{item.title}}
+							</view>
+						</block>
+					</scroll-view>
+				</swiper-item>
+			</swiper>
+
+
 		</view>
 	</view>
 </template>
@@ -37,7 +48,7 @@
 	export default {
 		data() {
 			return {
-				calHeight:0,
+				calHeight: 0,
 				name: test.name,
 				author: test.author,
 				synopsis: test.synopsis,
@@ -48,8 +59,8 @@
 		mounted() {
 			$u.calSurplusHeight(({
 				pageId: this,
-				pos:'cal',
-				success: val=> this.calHeight = val
+				pos: 'cal',
+				success: val => this.calHeight = val
 			}))
 		},
 		methods: {
@@ -60,13 +71,17 @@
 				uni.navigateTo({
 					url: `/pages/reading/reading?chapterID=${id}`
 				})
+			},
+			swiperCurrentChange(e) {
+				let i = e.detail.current
+				this.getTabIndex(i)
 			}
 		}
 	}
 </script>
 
 <style>
-.greyThueme {
-	background-color: #a8b0c3;
-}
+	.greyThueme {
+		background-color: #a8b0c3;
+	}
 </style>

@@ -38,7 +38,7 @@ if (uni.restoreGlobal) {
     }
     return target;
   };
-  const _sfc_main$o = {
+  const _sfc_main$q = {
     name: "myIcon",
     props: {
       type: {
@@ -62,7 +62,7 @@ if (uni.restoreGlobal) {
       return {};
     }
   };
-  function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$p(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createElementVNode("text", {
         class: vue.normalizeClass(["iconfont", [$props.type, $props.iconColor]]),
@@ -70,7 +70,7 @@ if (uni.restoreGlobal) {
       }, null, 6)
     ]);
   }
-  const __easycom_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$n], ["__file", "E:/code/uni-app/items/xiaoshuo/components/myIcon/myIcon.vue"]]);
+  const __easycom_0$3 = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["render", _sfc_render$p], ["__file", "E:/code/uni-app/items/xiaoshuo/components/myIcon/myIcon.vue"]]);
   function formatAppLog(type, filename, ...args) {
     if (uni.__log__) {
       uni.__log__(type, filename, ...args);
@@ -81,13 +81,13 @@ if (uni.restoreGlobal) {
   function resolveEasycom(component, easycom) {
     return shared.isString(component) ? easycom : component;
   }
-  const _sfc_main$n = {
+  const _sfc_main$p = {
     name: "search",
     data() {
       return {};
     }
   };
-  function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createElementVNode("view", {
@@ -108,8 +108,8 @@ if (uni.restoreGlobal) {
       ])
     ]);
   }
-  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$m], ["__file", "E:/code/uni-app/items/xiaoshuo/components/search/search.vue"]]);
-  const _sfc_main$m = {
+  const __easycom_0$2 = /* @__PURE__ */ _export_sfc(_sfc_main$p, [["render", _sfc_render$o], ["__file", "E:/code/uni-app/items/xiaoshuo/components/search/search.vue"]]);
+  const _sfc_main$o = {
     name: "banner",
     props: {
       imgArr: {
@@ -128,7 +128,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", { class: "m-2" }, [
       vue.createElementVNode("swiper", {
         "indicator-dots": "",
@@ -150,14 +150,14 @@ if (uni.restoreGlobal) {
       ], 32)
     ]);
   }
-  const __easycom_1$3 = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$l], ["__scopeId", "data-v-8b3f5c74"], ["__file", "E:/code/uni-app/items/xiaoshuo/components/banner/banner.vue"]]);
+  const __easycom_1$3 = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$n], ["__scopeId", "data-v-8b3f5c74"], ["__file", "E:/code/uni-app/items/xiaoshuo/components/banner/banner.vue"]]);
   let pageList = {
     0: "/pages/readList/readList",
     1: "/pages/listenNoval/listenNoval",
     2: "/pages/listenMusic/listenMusic",
     3: "/pages/listenKnowledge/listenKnowledge"
   };
-  const _sfc_main$l = {
+  const _sfc_main$n = {
     name: "functionSort",
     props: {
       functionSortArr: {
@@ -176,7 +176,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
     return vue.openBlock(), vue.createElementBlock("view", { class: "flex align-center justify-between mx-3 py-2" }, [
       (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.functionSortArr, (item, index) => {
@@ -195,14 +195,14 @@ if (uni.restoreGlobal) {
       }), 128))
     ]);
   }
-  const __easycom_2$1 = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$k], ["__file", "E:/code/uni-app/items/xiaoshuo/components/functionSort/functionSort.vue"]]);
-  const _sfc_main$k = {
+  const __easycom_2$3 = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$m], ["__file", "E:/code/uni-app/items/xiaoshuo/components/functionSort/functionSort.vue"]]);
+  const _sfc_main$m = {
     name: "listHeader",
     data() {
       return {};
     }
   };
-  function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$l(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
     return vue.openBlock(), vue.createElementBlock("view", { class: "flex align-center justify-between p-2 my-1" }, [
       vue.createElementVNode("view", { class: "font-lg" }, [
@@ -221,8 +221,8 @@ if (uni.restoreGlobal) {
       ])
     ]);
   }
-  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$j], ["__file", "E:/code/uni-app/items/xiaoshuo/components/listHeader/listHeader.vue"]]);
-  const _sfc_main$j = {
+  const __easycom_3 = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["render", _sfc_render$l], ["__file", "E:/code/uni-app/items/xiaoshuo/components/listHeader/listHeader.vue"]]);
+  const _sfc_main$l = {
     name: "recommond",
     props: {
       Rebooks: {
@@ -243,7 +243,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createElementVNode("view", { class: "flex align-center" }, [
@@ -270,8 +270,8 @@ if (uni.restoreGlobal) {
       ])
     ]);
   }
-  const __easycom_4 = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$i], ["__file", "E:/code/uni-app/items/xiaoshuo/components/recommond/recommond.vue"]]);
-  const _sfc_main$i = {
+  const __easycom_4 = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["render", _sfc_render$k], ["__file", "E:/code/uni-app/items/xiaoshuo/components/recommond/recommond.vue"]]);
+  const _sfc_main$k = {
     name: "booklist",
     props: {
       bookList: {
@@ -283,7 +283,7 @@ if (uni.restoreGlobal) {
       return {};
     }
   };
-  function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", null, [
       (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.bookList, (mitem, mindex) => {
         return vue.openBlock(), vue.createElementBlock("view", {
@@ -309,7 +309,7 @@ if (uni.restoreGlobal) {
       }), 128))
     ]);
   }
-  const __easycom_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__file", "E:/code/uni-app/items/xiaoshuo/components/booklist/booklist.vue"]]);
+  const __easycom_1$2 = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$j], ["__file", "E:/code/uni-app/items/xiaoshuo/components/booklist/booklist.vue"]]);
   function getDevtoolsGlobalHook() {
     return getTarget().__VUE_DEVTOOLS_GLOBAL_HOOK__;
   }
@@ -1462,7 +1462,7 @@ if (uni.restoreGlobal) {
     let divisionNum = Math.floor(num / 60), remainderNum = Math.floor(num % 60), zero = (x) => "0".repeat(2 - String(x).length);
     return `${zero(divisionNum) + divisionNum}:${zero(remainderNum) + remainderNum}`;
   }
-  const _sfc_main$h = {
+  const _sfc_main$j = {
     name: "myaudio",
     data() {
       return {
@@ -1495,7 +1495,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
     return vue.openBlock(), vue.createElementBlock("view", {
       onClick: _cache[6] || (_cache[6] = (...args) => $options.toDetail && $options.toDetail(...args)),
@@ -1572,8 +1572,8 @@ if (uni.restoreGlobal) {
       ])
     ], 4);
   }
-  const __easycom_6 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__file", "E:/code/uni-app/items/xiaoshuo/components/myaudio/myaudio.vue"]]);
-  const _sfc_main$g = {
+  const __easycom_6 = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$i], ["__file", "E:/code/uni-app/items/xiaoshuo/components/myaudio/myaudio.vue"]]);
+  const _sfc_main$i = {
     data() {
       return {
         statusBarHeight: this.$statusBarHeight + 10,
@@ -1718,10 +1718,10 @@ if (uni.restoreGlobal) {
     },
     methods: {}
   };
-  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_search = resolveEasycom(vue.resolveDynamicComponent("search"), __easycom_0$2);
     const _component_banner = resolveEasycom(vue.resolveDynamicComponent("banner"), __easycom_1$3);
-    const _component_functionSort = resolveEasycom(vue.resolveDynamicComponent("functionSort"), __easycom_2$1);
+    const _component_functionSort = resolveEasycom(vue.resolveDynamicComponent("functionSort"), __easycom_2$3);
     const _component_listHeader = resolveEasycom(vue.resolveDynamicComponent("listHeader"), __easycom_3);
     const _component_recommond = resolveEasycom(vue.resolveDynamicComponent("recommond"), __easycom_4);
     const _component_booklist = resolveEasycom(vue.resolveDynamicComponent("booklist"), __easycom_1$2);
@@ -1759,38 +1759,1297 @@ if (uni.restoreGlobal) {
       vue.createVNode(_component_myaudio)
     ], 4);
   }
-  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/index/index.vue"]]);
-  const _sfc_main$f = {
+  const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/index/index.vue"]]);
+  const _sfc_main$h = {
+    name: "tabTop",
+    props: {
+      tabIndex: {
+        type: Number,
+        default: 0
+      },
+      tabArr: {
+        type: Array,
+        default: () => []
+      }
+    },
     data() {
       return {};
     },
-    methods: {}
+    methods: {
+      changeTab(index) {
+        this.$emit("getTabIndex", index);
+      }
+    }
+  };
+  function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
+    return vue.openBlock(), vue.createElementBlock("view", {
+      class: "flex align-center border",
+      style: { "height": "80rpx", "justify-content": "space-around" }
+    }, [
+      (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.tabArr, (item, index) => {
+        return vue.openBlock(), vue.createElementBlock("view", {
+          key: index,
+          class: "flex flex-column align-center justify-between",
+          style: { "height": "80rpx" }
+        }, [
+          vue.createElementVNode("view", {
+            class: vue.normalizeClass(["text-light-black pt-1 animated faster", index === $props.tabIndex ? "font-weight-bold pulse" : ""]),
+            onClick: ($event) => $options.changeTab(index)
+          }, vue.toDisplayString(item), 11, ["onClick"]),
+          index === $props.tabIndex ? (vue.openBlock(), vue.createElementBlock("view", {
+            key: 0,
+            class: "rounded animated zoomIn faster",
+            style: { "width": "80rpx", "height": "8rpx", "background-color": "#fb5f39" }
+          })) : vue.createCommentVNode("v-if", true)
+        ]);
+      }), 128))
+    ]);
+  }
+  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$g], ["__file", "E:/code/uni-app/items/xiaoshuo/components/tabTop/tabTop.vue"]]);
+  const _sfc_main$g = {
+    name: "collections",
+    props: {
+      bookID: {
+        type: Number,
+        default: 0
+      },
+      bookImgUrl: {
+        type: String,
+        default: ""
+      },
+      bookName: {
+        type: String,
+        default: ""
+      },
+      bookSynopsis: {
+        type: String,
+        default: ""
+      }
+    },
+    data() {
+      return {};
+    },
+    methods: {
+      cancal() {
+        this.showCancalCol(true);
+        this.throwId(this.bookID);
+      },
+      throwId(id) {
+        this.$emit("getID", id);
+      },
+      showCancalCol(bol) {
+        this.$emit("showCancelCol", bol);
+      }
+    }
+  };
+  function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
+    return vue.openBlock(), vue.createElementBlock("view", null, [
+      vue.createElementVNode("view", {
+        class: "flex align-center p-1 border-bottom",
+        style: { "height": "250rpx" }
+      }, [
+        vue.createElementVNode("image", {
+          src: $props.bookImgUrl,
+          mode: "aspectFill",
+          class: "rounded mx-2",
+          style: { "width": "200rpx", "height": "200rpx" }
+        }, null, 8, ["src"]),
+        vue.createElementVNode("view", {
+          class: "flex-1 position-relative",
+          style: { "height": "100%" }
+        }, [
+          vue.createElementVNode("view", { class: "py-1 font-md font-weight-bold" }, vue.toDisplayString($props.bookName), 1),
+          vue.createElementVNode("view", { class: "font text-light-black Multi-row-truncation" }, vue.toDisplayString($props.bookSynopsis), 1),
+          vue.createVNode(_component_myIcon, {
+            type: "icon-diandian",
+            size: "40",
+            class: "position-absolute right-0 bottom-0",
+            onClick: $options.cancal
+          }, null, 8, ["onClick"])
+        ])
+      ])
+    ]);
+  }
+  const __easycom_2$2 = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$f], ["__file", "E:/code/uni-app/items/xiaoshuo/components/collections/collections.vue"]]);
+  class MPAnimation {
+    constructor(options, _this) {
+      this.options = options;
+      this.animation = uni.createAnimation(options);
+      this.currentStepAnimates = {};
+      this.next = 0;
+      this.$ = _this;
+    }
+    _nvuePushAnimates(type, args) {
+      let aniObj = this.currentStepAnimates[this.next];
+      let styles = {};
+      if (!aniObj) {
+        styles = {
+          styles: {},
+          config: {}
+        };
+      } else {
+        styles = aniObj;
+      }
+      if (animateTypes1.includes(type)) {
+        if (!styles.styles.transform) {
+          styles.styles.transform = "";
+        }
+        let unit2 = "";
+        if (type === "rotate") {
+          unit2 = "deg";
+        }
+        styles.styles.transform += `${type}(${args + unit2}) `;
+      } else {
+        styles.styles[type] = `${args}`;
+      }
+      this.currentStepAnimates[this.next] = styles;
+    }
+    _animateRun(styles = {}, config = {}) {
+      let ref = this.$.$refs["ani"].ref;
+      if (!ref)
+        return;
+      return new Promise((resolve, reject) => {
+        nvueAnimation.transition(ref, {
+          styles,
+          ...config
+        }, (res) => {
+          resolve();
+        });
+      });
+    }
+    _nvueNextAnimate(animates, step = 0, fn) {
+      let obj = animates[step];
+      if (obj) {
+        let {
+          styles,
+          config
+        } = obj;
+        this._animateRun(styles, config).then(() => {
+          step += 1;
+          this._nvueNextAnimate(animates, step, fn);
+        });
+      } else {
+        this.currentStepAnimates = {};
+        typeof fn === "function" && fn();
+        this.isEnd = true;
+      }
+    }
+    step(config = {}) {
+      this.animation.step(config);
+      return this;
+    }
+    run(fn) {
+      this.$.animationData = this.animation.export();
+      this.$.timer = setTimeout(() => {
+        typeof fn === "function" && fn();
+      }, this.$.durationTime);
+    }
+  }
+  const animateTypes1 = [
+    "matrix",
+    "matrix3d",
+    "rotate",
+    "rotate3d",
+    "rotateX",
+    "rotateY",
+    "rotateZ",
+    "scale",
+    "scale3d",
+    "scaleX",
+    "scaleY",
+    "scaleZ",
+    "skew",
+    "skewX",
+    "skewY",
+    "translate",
+    "translate3d",
+    "translateX",
+    "translateY",
+    "translateZ"
+  ];
+  const animateTypes2 = ["opacity", "backgroundColor"];
+  const animateTypes3 = ["width", "height", "left", "right", "top", "bottom"];
+  animateTypes1.concat(animateTypes2, animateTypes3).forEach((type) => {
+    MPAnimation.prototype[type] = function(...args) {
+      this.animation[type](...args);
+      return this;
+    };
+  });
+  function createAnimation(option, _this) {
+    if (!_this)
+      return;
+    clearTimeout(_this.timer);
+    return new MPAnimation(option, _this);
+  }
+  const _sfc_main$f = {
+    name: "uniTransition",
+    emits: ["click", "change"],
+    props: {
+      show: {
+        type: Boolean,
+        default: false
+      },
+      modeClass: {
+        type: [Array, String],
+        default() {
+          return "fade";
+        }
+      },
+      duration: {
+        type: Number,
+        default: 300
+      },
+      styles: {
+        type: Object,
+        default() {
+          return {};
+        }
+      },
+      customClass: {
+        type: String,
+        default: ""
+      }
+    },
+    data() {
+      return {
+        isShow: false,
+        transform: "",
+        opacity: 1,
+        animationData: {},
+        durationTime: 300,
+        config: {}
+      };
+    },
+    watch: {
+      show: {
+        handler(newVal) {
+          if (newVal) {
+            this.open();
+          } else {
+            if (this.isShow) {
+              this.close();
+            }
+          }
+        },
+        immediate: true
+      }
+    },
+    computed: {
+      stylesObject() {
+        let styles = {
+          ...this.styles,
+          "transition-duration": this.duration / 1e3 + "s"
+        };
+        let transform = "";
+        for (let i in styles) {
+          let line = this.toLine(i);
+          transform += line + ":" + styles[i] + ";";
+        }
+        return transform;
+      },
+      transformStyles() {
+        return "transform:" + this.transform + ";opacity:" + this.opacity + ";" + this.stylesObject;
+      }
+    },
+    created() {
+      this.config = {
+        duration: this.duration,
+        timingFunction: "ease",
+        transformOrigin: "50% 50%",
+        delay: 0
+      };
+      this.durationTime = this.duration;
+    },
+    methods: {
+      init(obj = {}) {
+        if (obj.duration) {
+          this.durationTime = obj.duration;
+        }
+        this.animation = createAnimation(Object.assign(this.config, obj), this);
+      },
+      onClick() {
+        this.$emit("click", {
+          detail: this.isShow
+        });
+      },
+      step(obj, config = {}) {
+        if (!this.animation)
+          return;
+        for (let i in obj) {
+          try {
+            if (typeof obj[i] === "object") {
+              this.animation[i](...obj[i]);
+            } else {
+              this.animation[i](obj[i]);
+            }
+          } catch (e) {
+            formatAppLog("error", "at uni_modules/uni-transition/components/uni-transition/uni-transition.vue:139", `\u65B9\u6CD5 ${i} \u4E0D\u5B58\u5728`);
+          }
+        }
+        this.animation.step(config);
+        return this;
+      },
+      run(fn) {
+        if (!this.animation)
+          return;
+        this.animation.run(fn);
+      },
+      open() {
+        clearTimeout(this.timer);
+        this.transform = "";
+        this.isShow = true;
+        let { opacity, transform } = this.styleInit(false);
+        if (typeof opacity !== "undefined") {
+          this.opacity = opacity;
+        }
+        this.transform = transform;
+        this.$nextTick(() => {
+          this.timer = setTimeout(() => {
+            this.animation = createAnimation(this.config, this);
+            this.tranfromInit(false).step();
+            this.animation.run();
+            this.$emit("change", {
+              detail: this.isShow
+            });
+          }, 20);
+        });
+      },
+      close(type) {
+        if (!this.animation)
+          return;
+        this.tranfromInit(true).step().run(() => {
+          this.isShow = false;
+          this.animationData = null;
+          this.animation = null;
+          let { opacity, transform } = this.styleInit(false);
+          this.opacity = opacity || 1;
+          this.transform = transform;
+          this.$emit("change", {
+            detail: this.isShow
+          });
+        });
+      },
+      styleInit(type) {
+        let styles = {
+          transform: ""
+        };
+        let buildStyle = (type2, mode) => {
+          if (mode === "fade") {
+            styles.opacity = this.animationType(type2)[mode];
+          } else {
+            styles.transform += this.animationType(type2)[mode] + " ";
+          }
+        };
+        if (typeof this.modeClass === "string") {
+          buildStyle(type, this.modeClass);
+        } else {
+          this.modeClass.forEach((mode) => {
+            buildStyle(type, mode);
+          });
+        }
+        return styles;
+      },
+      tranfromInit(type) {
+        let buildTranfrom = (type2, mode) => {
+          let aniNum = null;
+          if (mode === "fade") {
+            aniNum = type2 ? 0 : 1;
+          } else {
+            aniNum = type2 ? "-100%" : "0";
+            if (mode === "zoom-in") {
+              aniNum = type2 ? 0.8 : 1;
+            }
+            if (mode === "zoom-out") {
+              aniNum = type2 ? 1.2 : 1;
+            }
+            if (mode === "slide-right") {
+              aniNum = type2 ? "100%" : "0";
+            }
+            if (mode === "slide-bottom") {
+              aniNum = type2 ? "100%" : "0";
+            }
+          }
+          this.animation[this.animationMode()[mode]](aniNum);
+        };
+        if (typeof this.modeClass === "string") {
+          buildTranfrom(type, this.modeClass);
+        } else {
+          this.modeClass.forEach((mode) => {
+            buildTranfrom(type, mode);
+          });
+        }
+        return this.animation;
+      },
+      animationType(type) {
+        return {
+          fade: type ? 1 : 0,
+          "slide-top": `translateY(${type ? "0" : "-100%"})`,
+          "slide-right": `translateX(${type ? "0" : "100%"})`,
+          "slide-bottom": `translateY(${type ? "0" : "100%"})`,
+          "slide-left": `translateX(${type ? "0" : "-100%"})`,
+          "zoom-in": `scaleX(${type ? 1 : 0.8}) scaleY(${type ? 1 : 0.8})`,
+          "zoom-out": `scaleX(${type ? 1 : 1.2}) scaleY(${type ? 1 : 1.2})`
+        };
+      },
+      animationMode() {
+        return {
+          fade: "opacity",
+          "slide-top": "translateY",
+          "slide-right": "translateX",
+          "slide-bottom": "translateY",
+          "slide-left": "translateX",
+          "zoom-in": "scale",
+          "zoom-out": "scale"
+        };
+      },
+      toLine(name) {
+        return name.replace(/([A-Z])/g, "-$1").toLowerCase();
+      }
+    }
   };
   function _sfc_render$e(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("view");
+    return $data.isShow ? (vue.openBlock(), vue.createElementBlock("view", {
+      key: 0,
+      ref: "ani",
+      animation: $data.animationData,
+      class: vue.normalizeClass($props.customClass),
+      style: vue.normalizeStyle($options.transformStyles),
+      onClick: _cache[0] || (_cache[0] = (...args) => $options.onClick && $options.onClick(...args))
+    }, [
+      vue.renderSlot(_ctx.$slots, "default")
+    ], 14, ["animation"])) : vue.createCommentVNode("v-if", true);
   }
-  const PagesCollectionCollection = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/collection/collection.vue"]]);
+  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$e], ["__file", "E:/code/uni-app/items/xiaoshuo/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
   const _sfc_main$e = {
-    data() {
-      return {};
+    name: "uniPopup",
+    components: {},
+    emits: ["change", "maskClick"],
+    props: {
+      animation: {
+        type: Boolean,
+        default: true
+      },
+      type: {
+        type: String,
+        default: "center"
+      },
+      isMaskClick: {
+        type: Boolean,
+        default: null
+      },
+      maskClick: {
+        type: Boolean,
+        default: null
+      },
+      backgroundColor: {
+        type: String,
+        default: "none"
+      },
+      safeArea: {
+        type: Boolean,
+        default: true
+      },
+      maskBackgroundColor: {
+        type: String,
+        default: "rgba(0, 0, 0, 0.4)"
+      }
     },
-    methods: {}
+    watch: {
+      type: {
+        handler: function(type) {
+          if (!this.config[type])
+            return;
+          this[this.config[type]](true);
+        },
+        immediate: true
+      },
+      isDesktop: {
+        handler: function(newVal) {
+          if (!this.config[newVal])
+            return;
+          this[this.config[this.type]](true);
+        },
+        immediate: true
+      },
+      maskClick: {
+        handler: function(val) {
+          this.mkclick = val;
+        },
+        immediate: true
+      },
+      isMaskClick: {
+        handler: function(val) {
+          this.mkclick = val;
+        },
+        immediate: true
+      },
+      showPopup(show) {
+      }
+    },
+    data() {
+      return {
+        duration: 300,
+        ani: [],
+        showPopup: false,
+        showTrans: false,
+        popupWidth: 0,
+        popupHeight: 0,
+        config: {
+          top: "top",
+          bottom: "bottom",
+          center: "center",
+          left: "left",
+          right: "right",
+          message: "top",
+          dialog: "center",
+          share: "bottom"
+        },
+        maskClass: {
+          position: "fixed",
+          bottom: 0,
+          top: 0,
+          left: 0,
+          right: 0,
+          backgroundColor: "rgba(0, 0, 0, 0.4)"
+        },
+        transClass: {
+          position: "fixed",
+          left: 0,
+          right: 0
+        },
+        maskShow: true,
+        mkclick: true,
+        popupstyle: this.isDesktop ? "fixforpc-top" : "top"
+      };
+    },
+    computed: {
+      isDesktop() {
+        return this.popupWidth >= 500 && this.popupHeight >= 500;
+      },
+      bg() {
+        if (this.backgroundColor === "" || this.backgroundColor === "none") {
+          return "transparent";
+        }
+        return this.backgroundColor;
+      }
+    },
+    mounted() {
+      const fixSize = () => {
+        const {
+          windowWidth,
+          windowHeight,
+          windowTop,
+          safeArea,
+          screenHeight: screenHeight2,
+          safeAreaInsets
+        } = uni.getSystemInfoSync();
+        this.popupWidth = windowWidth;
+        this.popupHeight = windowHeight + (windowTop || 0);
+        if (safeArea && this.safeArea) {
+          this.safeAreaInsets = safeAreaInsets.bottom;
+        } else {
+          this.safeAreaInsets = 0;
+        }
+      };
+      fixSize();
+    },
+    unmounted() {
+      this.setH5Visible();
+    },
+    created() {
+      if (this.isMaskClick === null && this.maskClick === null) {
+        this.mkclick = true;
+      } else {
+        this.mkclick = this.isMaskClick !== null ? this.isMaskClick : this.maskClick;
+      }
+      if (this.animation) {
+        this.duration = 300;
+      } else {
+        this.duration = 0;
+      }
+      this.messageChild = null;
+      this.clearPropagation = false;
+      this.maskClass.backgroundColor = this.maskBackgroundColor;
+    },
+    methods: {
+      setH5Visible() {
+      },
+      closeMask() {
+        this.maskShow = false;
+      },
+      disableMask() {
+        this.mkclick = false;
+      },
+      clear(e) {
+        e.stopPropagation();
+        this.clearPropagation = true;
+      },
+      open(direction) {
+        if (this.showPopup) {
+          clearTimeout(this.timer);
+          this.showPopup = false;
+        }
+        let innerType = ["top", "center", "bottom", "left", "right", "message", "dialog", "share"];
+        if (!(direction && innerType.indexOf(direction) !== -1)) {
+          direction = this.type;
+        }
+        if (!this.config[direction]) {
+          formatAppLog("error", "at uni_modules/uni-popup/components/uni-popup/uni-popup.vue:280", "\u7F3A\u5C11\u7C7B\u578B\uFF1A", direction);
+          return;
+        }
+        this[this.config[direction]]();
+        this.$emit("change", {
+          show: true,
+          type: direction
+        });
+      },
+      close(type) {
+        this.showTrans = false;
+        this.$emit("change", {
+          show: false,
+          type: this.type
+        });
+        clearTimeout(this.timer);
+        this.timer = setTimeout(() => {
+          this.showPopup = false;
+        }, 300);
+      },
+      touchstart() {
+        this.clearPropagation = false;
+      },
+      onTap() {
+        if (this.clearPropagation) {
+          this.clearPropagation = false;
+          return;
+        }
+        this.$emit("maskClick");
+        if (!this.mkclick)
+          return;
+        this.close();
+      },
+      top(type) {
+        this.popupstyle = this.isDesktop ? "fixforpc-top" : "top";
+        this.ani = ["slide-top"];
+        this.transClass = {
+          position: "fixed",
+          left: 0,
+          right: 0,
+          backgroundColor: this.bg
+        };
+        if (type)
+          return;
+        this.showPopup = true;
+        this.showTrans = true;
+        this.$nextTick(() => {
+          if (this.messageChild && this.type === "message") {
+            this.messageChild.timerClose();
+          }
+        });
+      },
+      bottom(type) {
+        this.popupstyle = "bottom";
+        this.ani = ["slide-bottom"];
+        this.transClass = {
+          position: "fixed",
+          left: 0,
+          right: 0,
+          bottom: 0,
+          paddingBottom: this.safeAreaInsets + "px",
+          backgroundColor: this.bg
+        };
+        if (type)
+          return;
+        this.showPopup = true;
+        this.showTrans = true;
+      },
+      center(type) {
+        this.popupstyle = "center";
+        this.ani = ["zoom-out", "fade"];
+        this.transClass = {
+          position: "fixed",
+          display: "flex",
+          flexDirection: "column",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          top: 0,
+          justifyContent: "center",
+          alignItems: "center"
+        };
+        if (type)
+          return;
+        this.showPopup = true;
+        this.showTrans = true;
+      },
+      left(type) {
+        this.popupstyle = "left";
+        this.ani = ["slide-left"];
+        this.transClass = {
+          position: "fixed",
+          left: 0,
+          bottom: 0,
+          top: 0,
+          backgroundColor: this.bg,
+          display: "flex",
+          flexDirection: "column"
+        };
+        if (type)
+          return;
+        this.showPopup = true;
+        this.showTrans = true;
+      },
+      right(type) {
+        this.popupstyle = "right";
+        this.ani = ["slide-right"];
+        this.transClass = {
+          position: "fixed",
+          bottom: 0,
+          right: 0,
+          top: 0,
+          backgroundColor: this.bg,
+          display: "flex",
+          flexDirection: "column"
+        };
+        if (type)
+          return;
+        this.showPopup = true;
+        this.showTrans = true;
+      }
+    }
   };
   function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("view");
+    const _component_uni_transition = resolveEasycom(vue.resolveDynamicComponent("uni-transition"), __easycom_0$1);
+    return $data.showPopup ? (vue.openBlock(), vue.createElementBlock("view", {
+      key: 0,
+      class: vue.normalizeClass(["uni-popup", [$data.popupstyle, $options.isDesktop ? "fixforpc-z-index" : ""]])
+    }, [
+      vue.createElementVNode("view", {
+        onTouchstart: _cache[1] || (_cache[1] = (...args) => $options.touchstart && $options.touchstart(...args))
+      }, [
+        $data.maskShow ? (vue.openBlock(), vue.createBlock(_component_uni_transition, {
+          key: "1",
+          name: "mask",
+          "mode-class": "fade",
+          styles: $data.maskClass,
+          duration: $data.duration,
+          show: $data.showTrans,
+          onClick: $options.onTap
+        }, null, 8, ["styles", "duration", "show", "onClick"])) : vue.createCommentVNode("v-if", true),
+        vue.createVNode(_component_uni_transition, {
+          key: "2",
+          "mode-class": $data.ani,
+          name: "content",
+          styles: $data.transClass,
+          duration: $data.duration,
+          show: $data.showTrans,
+          onClick: $options.onTap
+        }, {
+          default: vue.withCtx(() => [
+            vue.createElementVNode("view", {
+              class: vue.normalizeClass(["uni-popup__wrapper", [$data.popupstyle]]),
+              style: vue.normalizeStyle({ backgroundColor: $options.bg }),
+              onClick: _cache[0] || (_cache[0] = (...args) => $options.clear && $options.clear(...args))
+            }, [
+              vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
+            ], 6)
+          ]),
+          _: 3
+        }, 8, ["mode-class", "styles", "duration", "show", "onClick"])
+      ], 32)
+    ], 2)) : vue.createCommentVNode("v-if", true);
   }
-  const PagesSortSort = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/sort/sort.vue"]]);
+  const __easycom_2$1 = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$d], ["__scopeId", "data-v-4dd3c44b"], ["__file", "E:/code/uni-app/items/xiaoshuo/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
+  let screenWidth = uni.getSystemInfoSync().windowWidth, screenHeight = uni.getSystemInfoSync().windowHeight;
+  const Torpx = (num) => 750 * num / screenWidth, Topx = (num) => num * screenWidth / 750;
+  const getSystemHeight = (isRpx = true) => isRpx ? Torpx(screenHeight) : screenHeight;
+  const formatTime = (num) => {
+    let divisionNum = Math.floor(num / 60), remainderNum = Math.floor(num % 60), zero = (x) => "0".repeat(2 - String(x).length);
+    return `${zero(divisionNum) + divisionNum}:${zero(remainderNum) + remainderNum}`;
+  };
+  const getNodesHeightInfo = (optionObj) => {
+    let {
+      pageID,
+      pos,
+      success
+    } = optionObj;
+    let heightArr = [];
+    const query = uni.createSelectorQuery().in(pageID);
+    query.selectAll(`.${pos}`).boundingClientRect((data) => {
+      data.forEach((item) => heightArr.push(item.height));
+      success(heightArr);
+    }).exec();
+  };
+  const calSurplusHeight = (optionObj) => {
+    let {
+      pageID,
+      pos,
+      isRpx = true,
+      isTabBarPage = false,
+      success
+    } = optionObj;
+    getNodesHeightInfo({
+      pageID,
+      pos,
+      success: (NodesHeightArr) => {
+        let usedTotalHeight = NodesHeightArr.reduce((pre, item) => pre + item);
+        let SurHeight = isTabBarPage ? screenHeight - usedTotalHeight - 50 : screenHeight - usedTotalHeight;
+        SurHeight = isRpx ? Torpx(SurHeight) : SurHeight;
+        let SurHeightEND = Math.floor(SurHeight);
+        success(SurHeightEND);
+      }
+    });
+  };
+  const unit = {
+    Torpx,
+    Topx,
+    getSystemHeight,
+    formatTime,
+    getNodesHeightInfo,
+    calSurplusHeight
+  };
+  let books = [
+    {
+      id: 1e3,
+      name: "\u671D\u82B1\u5915\u62FE",
+      author: `\u9C81\u8FC5`,
+      synopsis: `\u671D\u82B1\u5915\u62FE\u300B\u539F\u540D\u300A\u65E7\u4E8B\u91CD\u63D0\u300B\uFF0C\u662F\u73B0\u4EE3\u6587\u5B66\u5BB6\u9C81\u8FC5\u7684\u6563\u6587\u96C6\uFF0C\u6536\u5F55\u9C81\u8FC5\u4E8E1926\u5E74\u521B\u4F5C\u768410\u7BC7\u56DE\u5FC6\u6027\u6563\u6587\uFF0C1928\u5E74\u7531\u5317\u4EAC\u672A\u540D\u793E\u51FA\u7248\uFF0C\u73B0\u7F16\u5165\u300A\u9C81\u8FC5\u5168\u96C6\u300B\u7B2C2\u5377\u3002
+\u6B64\u6587\u96C6\u4F5C\u4E3A\u201C\u56DE\u5FC6\u7684\u8BB0\u4E8B\u201D\uFF0C\u591A\u4FA7\u9762\u5730\u53CD\u6620\u4E86\u4F5C\u8005\u9C81\u8FC5\u9752\u5C11\u5E74\u65F6\u671F\u7684\u751F\u6D3B\uFF0C\u5F62\u8C61\u5730\u53CD\u6620\u4E86\u4ED6\u7684\u6027\u683C\u548C\u5FD7\u8DA3\u7684\u5F62\u6210\u7ECF\u8FC7\u3002\u524D\u4E03\u7BC7\u53CD\u6620\u4ED6\u7AE5\u5E74\u65F6\u4EE3\u5728\u7ECD\u5174\u7684\u5BB6\u5EAD\u548C\u79C1\u587E\u4E2D\u7684\u751F\u6D3B\u60C5\u666F\uFF0C\u540E\u4E09\u7BC7\u53D9\u8FF0\u4ED6\u4ECE\u5BB6\u4E61\u5230\u5357\u4EAC\uFF0C\u53C8\u5230\u65E5\u672C\u7559\u5B66\uFF0C\u7136\u540E\u56DE\u56FD\u6559\u4E66\u7684\u7ECF\u5386\uFF1B\u63ED\u9732\u4E86\u534A\u5C01\u5EFA\u534A\u6B96\u6C11\u5730\u793E\u4F1A\u79CD\u79CD\u4E11\u6076\u7684\u4E0D\u5408\u7406\u73B0\u8C61\uFF0C\u540C\u65F6\u53CD\u6620\u4E86\u6709\u62B1\u8D1F\u7684\u9752\u5E74\u77E5\u8BC6\u5206\u5B50\u5728\u65E7\u4E2D\u56FD\u832B\u832B\u9ED1\u591C\u4E2D\uFF0C\u4E0D\u754F\u8270\u9669\uFF0C\u5BFB\u627E\u5149\u660E\u7684\u56F0\u96BE\u5386\u7A0B\uFF0C\u4EE5\u53CA\u6292\u53D1\u4E86\u4F5C\u8005\u5BF9\u5F80\u65E5\u4EB2\u53CB\u3001\u5E08\u957F\u7684\u6000\u5FF5\u4E4B\u60C5\u3002
+\u6587\u96C6\u4EE5\u8BB0\u4E8B\u4E3A\u4E3B\uFF0C\u9971\u542B\u7740\u6D53\u70C8\u7684\u6292\u60C5\u6C14\u606F\uFF0C\u5F80\u5F80\u53C8\u5939\u4EE5\u8BAE\u8BBA\uFF0C\u505A\u5230\u4E86\u6292\u60C5\u3001\u53D9\u4E8B\u548C\u8BAE\u8BBA\u878D\u4E3A\u4E00\u4F53\uFF0C\u4F18\u7F8E\u548C\u8C10\uFF0C\u6734\u5B9E\u611F\u4EBA\u3002\u4F5C\u54C1\u5BCC\u6709\u8BD7\u60C5\u753B\u610F\uFF0C\u53C8\u4E0D\u65F6\u7A7F\u63D2\u7740\u5E7D\u9ED8\u548C\u8BBD\u55BB\uFF1B\u5F62\u8C61\u751F\u52A8\uFF0C\u683C\u8C03\u660E\u6717\uFF0C\u6709\u5F3A\u70C8\u7684\u611F\u67D3\u529B\u3002`,
+      imgurl: "/static/indexListImg/indexListImg4.png"
+    },
+    {
+      id: 1001,
+      name: "\u4EBA\u95F4\u8349\u6728",
+      author: `\u6C6A\u66FE\u797A`,
+      synopsis: `\u8FD9\u672C\u4E66\u5176\u5B9E\u662F\u6C6A\u66FE\u797A\u5148\u751F\u7684\u4F18\u79C0\u6563\u6587\u96C6\u3002\u6C6A\u66FE\u797A\u7684\u6587\u5B57\u5927\u90FD\u5341\u5206\u6709\u5473\u9053\uFF0C\u4ED6\u662F\u4E00\u4E2A\u5341\u5206\u61C2\u5F97\u751F\u6D3B\u7684\u4EBA\uFF0C\u5728\u5F53\u4EE3\u4F5C\u5BB6\u4E2D\uFF0C\u80FD\u591F\u5728\u6563\u6587\u548C\u5C0F\u8BF4\u65B9\u9762\u72EC\u6811\u4E00\u5E1C\uFF0C\u62E5\u6709\u81EA\u5DF1\u7279\u8272\u98CE\u683C\u7684\u4F5C\u5BB6\u4E0D\u591A\uFF0C\u6C6A\u66FE\u797A\u5148\u751F\u7EDD\u5BF9\u662F\u5176\u4E2D\u7684\u91CD\u8981\u4E00\u4F4D\u3002\u5728\u8FD9\u672C\u4E66\u4E2D\uFF0C\u6C6A\u66FE\u797A\u5148\u751F\u7684\u6563\u6587\u529F\u5E95\u548C\u827A\u672F\u7279\u8272\u4F53\u73B0\u7684\u6DCB\u6F13\u5C3D\u81F4\uFF01`,
+      imgurl: "/static/indexListImg/indexListImg5.png"
+    },
+    {
+      id: 1002,
+      name: "\u884C\u8005\u65E0\u7586",
+      author: `\u4F59\u79CB\u96E8`,
+      synopsis: `	15\u5E74\u524D\u4F59\u79CB\u96E8\u5F00\u59CB\u4EE5\u957F\u9014\u65C5\u884C\u65B9\u5F0F\u5B9E\u5730\u8003\u5BDF\u6587\u5316\u3002\u4ED6\u4ECE\u56FD\u5185\u8D70\u5230\u56FD\u5916\uFF0C\u4ECE\u4E2D\u534E\u6587\u660E\u8D70\u5230\u4E86\u5176\u4ED6\u6587\u660E\u3002\u8FD9\u671F\u95F4\uFF0C\u4ED6\u4EE5\u300A\u6587\u5316\u82E6\u65C5\u300B\u548C\u300A\u5C71\u6CB3\u4E4B\u4E66\u300B\u4F5C\u4E3A\u8003\u5BDF\u4E2D\u534E\u6587\u660E\u7684\u8BB0\u5F55\uFF0C\u4EE5\u300A\u5343\u5E74\u4E00\u53F9\u300B\u4F5C\u4E3A\u8003\u5BDF\u4F0A\u65AF\u5170\u6587\u660E\u7684\u8BB0\u5F55\uFF0C\u4EE5\u300A\u884C\u8005\u65E0\u7586\u300B\u4F5C\u4E3A\u8003\u5BDF\u897F\u65B9\u6587\u660E\u7684\u8BB0\u5F55\u3002\u81F3\u6B64\uFF0C\u4F59\u79CB\u96E8\u5BF9\u4EBA\u7C7B\u5386\u53F2\u7684\u4E09\u5927\u6587\u660E\u8FDB\u884C\u4E86\u5B8C\u6574\u7684\u5173\u6CE8\u548C\u8BB0\u5F55\u3002
+	\u4F59\u79CB\u96E8\u5728\u300A\u884C\u8005\u65E0\u7586\u300B\u4E2D\u611F\u53F9\u9053\uFF1A\u201C\u6B27\u6D32\u6587\u660E\u786E\u5B9E\u4F18\u79C0\u800C\u53C8\u6210\u719F\uFF0C\u80FD\u628A\u53E4\u5178\u4F20\u7EDF\u548C\u73B0\u4EE3\u6587\u660E\u3001\u4E2A\u4EBA\u81EA\u7531\u548C\u793E\u4F1A\u516C\u5FB7\u878D\u4F1A\u8D2F\u901A\u3002\u66F4\u7FA1\u6155\u8857\u8FB9\u5496\u5561\u5EA7\u91CC\u5FAE\u7B11\u7684\u76EE\u5149\uFF0C\u53EA\u4E00\u95EA\uFF0C\u4FBF\u89C9\u5F97\u76EE\u5149\u60A0\u957F\uFF0C\u5C71\u6CB3\u65E0\u6059\u3002\u4F46\u8FD9\u4E9B\u5E74\uFF0C\u5374\u56E0\u8FC7\u5EA6\u7684\u81EA\u6EE1\u3001\u81EA\u4EAB\u800C\u81EA\u95ED\uFF0C\u5BF9\u4E16\u754C\u5BF9\u81EA\u5DF1\u6709\u4E0D\u5C11\u65F6\u7A7A\u9519\u89C9\u3002\u201D
+	\u300A\u884C\u8005\u65E0\u7586\u300B\u5206\u5357\u6B27\u3001\u4E2D\u6B27\u3001\u897F\u6B27\u3001\u5317\u6B274\u5377\uFF0C\u6536\u5F55\u6563\u658780\u7BC7\u3002\u5168\u4E66\u5728\u601D\u8003\u7684\u5B8C\u6574\u6027\u548C\u6DF1\u523B\u6027\u3001\u6587\u4F53\u7684\u5F20\u529B\u548C\u81EA\u7531\u4E0A\uFF0C\u66F4\u80DC\u4F59\u79CB\u96E8\u4EE5\u524D\u7684\u51E0\u90E8\u8457\u4F5C\u3002\u5168\u65B0\u7248\u7684\u300A\u884C\u8005\u65E0\u7586\u300B\u7ECF\u8FC7\u4F59\u79CB\u96E8\u5148\u751F\u5927\u5E45\u5EA6\u4FEE\u6539\u589E\u5220\uFF0C\u5168\u65B0\u4FEE\u8BA2\u518D\u5EA6\u51FA\u7248\u3002`,
+      imgurl: "/static/indexListImg/indexListImg6.png"
+    },
+    {
+      id: 1003,
+      name: "\u4EBA\u7C7B\u7B80\u53F2",
+      author: `\u5C24\u74E6\u5C14\xB7\u8D6B\u62C9\u5229`,
+      synopsis: `\u4F5C\u8005\u5C24\u74E6\u5C14\xB7\u8D6B\u62C9\u5229\u4E3A1976\u5E74\u751F\u4EBA\uFF0C\u6765\u81EA\u4EE5\u8272\u5217\u3002\u725B\u6D25\u5927\u5B66\u5386\u53F2\u5B66\u535A\u58EB\uFF0C\u73B0\u4E3A\u8036\u8DEF\u6492\u51B7\u5E0C\u4F2F\u6765\u5927\u5B66\u7684\u5386\u53F2\u7CFB\u6559\u6388\u3002\u4ED6\u7684\u300A\u4EBA\u7C7B\u7B80\u53F2\u300B\u4E00\u4E66\u8BA9\u4ED6\u4E00\u4E3E\u6210\u540D\uFF0C\u6210\u4E3A\u4EE5\u8272\u5217\u8D85\u7EA7\u7545\u9500\u4E66\uFF0C\u76EE\u524D\u8FD9\u672C\u4E66\u5DF2\u638830\u591A\u4E2A\u56FD\u5BB6\u7248\u6743\u3002`,
+      imgurl: "/static/indexListImg/indexListImg1.png"
+    },
+    {
+      id: 1004,
+      name: "\u6781\u7B80\u6B27\u6D32\u53F2",
+      author: `\u7EA6\u7FF0\xB7\u8D6B\u65AF\u7279`,
+      synopsis: `\u672C\u4E66\u4F5C\u8005\u7EA6\u7FF0\xB7\u8D6B\u65AF\u7279\uFF0C\u4E3A\u6FB3\u5927\u5229\u4E9A\u4E0E\u82F1\u8054\u90A6\u6743\u5A01\u7684\u793E\u4F1A\u66A8\u653F\u6CBB\u5386\u53F2\u5B66\u5BB6\u3001\u6B27\u6D32\u53F2\u4E13\u5BB6\u3002\u73B0\u4EFB\u58A8\u5C14\u672C\u7684\u62C9\u7B79\u4F2F\u5927\u5B66\uFF08La Trobe University\uFF09\u5386\u53F2\u7CFB\u6559\u6388\u3002`,
+      imgurl: "/static/indexListImg/indexListImg2.png"
+    },
+    {
+      id: 1005,
+      name: "\u5168\u7403\u901A\u53F2",
+      author: `\u65AF\u5854\u592B\u91CC\u963F\u8BFA\u65AF`,
+      synopsis: `\u4F5C\u8005\u65AF\u5854\u592B\u91CC\u963F\u8BFA\u65AF\u662F\u7F8E\u56FD\u52A0\u5DDE\u5927\u5B66\u7684\u5386\u53F2\u5B66\u6559\u6388\uFF0C\u4EAB\u8A89\u4E16\u754C\u7684\u5386\u53F2\u5B66\u5BB6\uFF0C\u66FE\u83B7\u5F97\u8FC7\u53E4\u6839\u6D77\u59C6\u5956\u3001\u798F\u7279\u6770\u51FA\u6559\u5E08\u5956\u548C\u6D1B\u514B\u83F2\u52D2\u57FA\u91D1\u5956\u7B49\u4E00\u7CFB\u5217\u5B66\u672F\u8363\u8A89\u3002`,
+      imgurl: "/static/indexListImg/indexListImg3.png"
+    },
+    {
+      id: 1006,
+      name: "\u8046\u542C\u97F3\u4E50",
+      author: `\u65AF\u5854\u592B\u91CC\u963F\u8BFA\u65AF`,
+      synopsis: `\u8BFB\u5B8C\u672C\u4E66\uFF0C\u4F60\u4F1A\u53D1\u73B0\u4F60\u7684\u8111\u888B\u91CC\u591A\u4E86\u4E00\u680B\u5EFA\u7B51\uFF0C\u5B83\u7684\u540D\u5B57\u53EB\u505A\u53E4\u5178\u97F3\u4E50\u53F2\u3002\u800C\u4E14\uFF0C\u8FD9\u4E2A\u5EFA\u7B51\u7CBE\u5DE7\uFF0C\u6BCF\u4E00\u4E2A\u5730\u65B9\uFF0C\u6BCF\u4E00\u5904\u547D\u540D\uFF0C\u90FD\u662F\u7CBE\u5DE7\u800C\u53C8\u51C6\u786E\u7684\u3002`,
+      imgurl: "/static/indexListImg/indexListImg7.png"
+    },
+    {
+      id: 1007,
+      name: "\u5FC3\u91CC\u7684\u70E6\u607C",
+      author: `\u6D77\u6797`,
+      synopsis: `\u4E16\u754C\u4E0A\u6700\u91CD\u8981\u7684\u8FEA\u4F26\u7814\u7A76\u4E13\u5BB6\u4E3A\u9C8D\u52C3\u8FEA\u4F26\u7684\u798F\u97F3\u65F6\u671F\u63D0\u4F9B\u4E86\u4E00\u4E2A\u6DF1\u5165\u7684\u8FA9\u89E3\u2014\u2014\u4ECE1979\u5E74\u52301981\u5E74\uFF0C\u8FD9\u6BB5\u8FEA\u4F26\u7684\u798F\u97F3\u65F6\u671F\u4E00\u76F4\u5E7F\u53D7\u4E89\u8BAE\uFF08\u8FD9\u672C\u4E66\u51FA\u7248\u7684\u65F6\u95F4\u4E5F\u6070\u9022\u8FEA\u4F26\u7684\u798F\u97F3\u7CFB\u5217\u4E13\u8F91\u5957\u88C5\u7248\u300AThe Bootleg Series\u300B\u53D1\u884C\uFF09\u3002
+\u6D77\u6797\u901A\u8FC7\u89C2\u6469\u4E86\u4E00\u573A\u53C8\u4E00\u573A\u7684\u6F14\u51FA\u548C\u4E00\u4E2A\u53C8\u4E00\u4E2A\u65F6\u671F\uFF0C\u7EC8\u4E8E\u4F7F\u5F97\u8FD9\u4E00\u6BB5\u9ED1\u6697\u4E0D\u4E3A\u4EBA\u719F\u77E5\u7684\u65F6\u671F\u53D8\u5F97\u6E05\u6670\u8D77\u6765\uFF0C\u8FD9\u4E5F\u8BA9\u4EBA\u4EEC\u53EF\u4EE5\u76F8\u4FE1\uFF0C\u8FEA\u4F26\u572870\u5E74\u4EE3\u540E\u671F\u7684\u4F5C\u54C1\u51E0\u4E4E\u548C60\u5E74\u4EE3\u4E2D\u671F\u4E00\u6837\u7684\u91CD\u8981\u3002
+\u8FD9\u662F\u6447\u6EDA\u4FEE\u6B63\u4E3B\u4E49\u7684\u4E00\u4E2A\u4F1F\u5927\u4F5C\u54C1\u3002`,
+      imgurl: "/static/indexListImg/indexListImg8.png"
+    },
+    {
+      id: 1008,
+      name: "\u68A6\u5230\u62AB\u5934\u58EB",
+      author: `\u8C22\u83F2\u5C14\u5FB7`,
+      synopsis: `\u6EDA\u77F3\u6742\u5FD7\u8D44\u6DF1\u8BC4\u8BBA\u5BB6\u8C22\u83F2\u5C14\u5FB7\u5BF9\u8FC7\u53BB\u7684\u51E0\u5341\u5E74\u91CC\u62AB\u5934\u58EB\u4E50\u961F\u9020\u6210\u7684\u5F71\u54CD\u8FDB\u884C\u4E86\u6DF1\u5165\u5730\u63A2\u7D22\uFF0C\u8FD9\u662F\u6709\u53F2\u4EE5\u6765\u5173\u4E8E\u201Cthe Fab Four\uFF08\u4E13\u95E8\u5BF9\u62AB\u5934\u58EB\u8FDB\u884C\u6A21\u4EFF\u7684\u4E50\u961F\uFF09\u201D\u6700\u6709\u521B\u610F\u548C\u6700\u6709\u6D1E\u5BDF\u529B\u7684\u4E66\u7C4D\u4E4B\u4E00\u3002
+\u5728\u8FD9\u672C\u4E66\u91CC\u6211\u4EEC\u8FD8\u80FD\u8BFB\u5230\u4E54\u6CBB\xB7\u54C8\u91CC\u68EE1974\u5E74\u707E\u96BE\u6027\u7684\u5355\u98DE\u5DE1\u6F14\uFF0C\u4EE5\u53CA\u6BD4\u5409\u65AF\u5144\u5F1F\u5173\u4E8E\u80E1\u6912\u519B\u58EB\u7684\u7535\u5F71\u3002\u8C22\u83F2\u5C14\u5FB7\u5199\u9053\uFF1A\u201C\u4E16\u754C\u4E00\u76F4\u5728\u68A6\u60F3\u7740\u62AB\u5934\u58EB\uFF0C\u5373\u4F7F\u4ED6\u4EEC\u81EA\u5DF1\u5728\u5F88\u4E45\u5F88\u4E45\u4EE5\u524D\u5C31\u8BA4\u4E3A\u4ED6\u4EEC\u7684\u68A6\u5DF2\u7ECF\u7ED3\u675F\u4E86\u3002\u201D`,
+      imgurl: "/static/indexListImg/indexListImg9.png"
+    },
+    {
+      id: 1009,
+      name: "\u827A\u672F\u7684\u6545\u4E8B",
+      author: `E.H\u8D21\u5E03\u91CC\u5E0C`,
+      synopsis: `\u662F\u6709\u5173\u827A\u672F\u7684\u4E66\u7C4D\u4E2D\u6700\u8457\u540D\u3001\u6700\u6D41\u884C\u7684\u8457\u4F5C\u4E4B\u4E00\u3002\u5B83\u6982\u62EC\u5730\u53D9\u8FF0\u4E86\u4ECE\u6700\u65E9\u7684\u6D1E\u7A9F\u7ED8\u753B\u5230\u5F53\u4ECA\u7684\u5B9E\u9A8C\u827A\u672F\u7684\u53D1\u5C55\u5386\u7A0B\uFF0C\u4EE5\u9610\u660E\u827A\u672F\u53F2\u662F\u201C\u5404\u79CD\u4F20\u7EDF\u4E0D\u65AD\u8FC2\u56DE\u3001\u4E0D\u65AD\u6539\u53D8\u7684\u5386\u53F2\uFF0C\u6BCF\u4E00\u4EF6\u4F5C\u54C1\u5728\u8FD9\u5386\u53F2\u4E2D\u90FD\u65E2\u56DE\u987E\u8FC7\u53BB\u53C8\u5BFC\u5411\u672A\u6765\u201D\u3002`,
+      imgurl: "/static/indexListImg/indexListImg10.png"
+    },
+    {
+      id: 1010,
+      name: "\u8A79\u68EE\u827A\u672F\u53F2",
+      author: `H.W.\u8A79\u68EE`,
+      synopsis: `\u300A\u8A79\u68EE\u827A\u672F\u53F2\u300B\u662F2013\u5E74\u4E16\u754C\u56FE\u4E66\u51FA\u7248\u516C\u53F8\u51FA\u7248\u7684\u56FE\u4E66\uFF0C\u300A\u8A79\u68EE\u827A\u672F\u53F2\u300B\u662F\u4E00\u90E8\u5728\u5B66\u754C\u548C\u793E\u4F1A\u5927\u4F17\u4E2D\u5F88\u6709\u5F71\u54CD\u7684\u5B66\u672F\u8457\u4F5C\u3002\u5728\u4E00\u6B21\u6B21\u65B0\u7248\u4E2D\u4E0D\u65AD\u4FEE\u8BA2\u548C\u8865\u5145\u65B0\u5185\u5BB9\uFF0C\u5F15\u5BFC\u8BFB\u8005\u601D\u8003\u548C\u63D0\u51FA\u95EE\u9898\uFF0C\u628A\u827A\u672F\u53F2\u7684\u5B66\u4E60\u3001\u7814\u7A76\u548C\u63D0\u9AD8\u4EBA\u4EEC\u7684\u6587\u5316\u7D20\u8D28\u8054\u7CFB\u8D77\u6765\uFF0C\u9F13\u52B1\u548C\u542F\u53D1\u4EBA\u4EEC\u63A2\u7A76\u672A\u77E5\u3002`,
+      imgurl: "/static/indexListImg/indexListImg11.png"
+    },
+    {
+      id: 1011,
+      name: "\u52A0\u5FB7\u7EB3\u827A\u672F\u901A\u53F2",
+      author: `\u5F17\u96F7\u5FB7\xB7S. \u514B\u83B1\u7EB3 / \u514B\u91CC\u65AF\u5EF7\xB7J. \u9A6C\u7C73\u4E9A`,
+      synopsis: `\u300A\u52A0\u5FB7\u7EB3\u827A\u672F\u901A\u53F2\u300B\u9075\u5FAA\u52A0\u5FB7\u7EB3\u7684\u57FA\u672C\u6846\u67B6\uFF0C\u4EE5\u201C\u5168\u666F\u5316\u201D\u7684\u89C6\u89D2\u6765\u9610\u91CA\u827A\u672F\u53D1\u5C55\u7684\u4E3B\u65E8\uFF0C\u5185\u5BB9\u4ECE\u53F2\u524D\u523020\u4E16\u7EAA\u7684\u540E\u73B0\u4EE3\u4E3B\u4E49\u827A\u672F\uFF0C\u6D89\u53CA\u7ED8\u753B\u3001\u96D5\u5851\u3001\u5EFA\u7B51\u3001\u8BBE\u8BA1\u3001\u6444\u5F71\u53CA\u5DE5\u827A\u7F8E\u672F\u7B49\u591A\u4E2A\u827A\u672F\u95E8\u7C7B\uFF0C\u4F53\u73B0\u51FA\u6743\u91CD\u5E73\u8861\u7684\u6574\u4F53\u89C2\u548C\u5BA2\u89C2\u6027\u3002`,
+      imgurl: "/static/indexListImg/indexListImg12.png"
+    },
+    {
+      id: 2001,
+      name: "\u897F\u6E38\u8BB0",
+      author: "\u5434\u627F\u6069",
+      synopsis: `\u300A\u897F\u6E38\u8BB0\u300B\u662F\u4E2D\u56FD\u53E4\u4EE3\u7B2C\u4E00\u90E8\u6D6A\u6F2B\u4E3B\u4E49\u7AE0\u56DE\u4F53\u957F\u7BC7\u795E\u9B54\u5C0F\u8BF4\u3002\u73B0\u5B58\u660E\u520A\u767E\u56DE\u672C\u300A\u897F\u6E38\u8BB0\u300B\u5747\u65E0\u4F5C\u8005\u7F72\u540D\u3002\u6E05\u4EE3\u5B66\u8005\u5434\u7389\u6422\u7B49\u9996\u5148\u63D0\u51FA\u300A\u897F\u6E38\u8BB0\u300B\u4F5C\u8005\u662F\u660E\u4EE3\u5434\u627F\u6069\u3002\u8FD9\u90E8\u5C0F\u8BF4\u4EE5\u201C\u5510\u50E7\u53D6\u7ECF\u201D\u8FD9\u4E00\u5386\u53F2\u4E8B\u4EF6\u4E3A\u84DD\u672C\uFF0C\u901A\u8FC7\u4F5C\u8005\u7684\u827A\u672F\u52A0\u5DE5\uFF0C\u6DF1\u523B\u5730\u63CF\u7ED8\u4E86\u5F53\u65F6\u7684\u793E\u4F1A\u73B0\u5B9E\u3002\u5168\u4E66\u4E3B\u8981\u63CF\u5199\u4E86\u5B59\u609F\u7A7A\u51FA\u4E16\u53CA\u5927\u95F9\u5929\u5BAB\u540E\uFF0C\u9047\u89C1\u4E86\u5510\u50E7\u3001\u732A\u516B\u6212\u3001\u6C99\u50E7\u548C\u767D\u9F99\u9A6C\uFF0C\u897F\u884C\u53D6\u7ECF\uFF0C\u4E00\u8DEF\u964D\u5996\u4F0F\u9B54\uFF0C\u7ECF\u5386\u4E86\u4E5D\u4E5D\u516B\u5341\u4E00\u96BE\uFF0C\u7EC8\u4E8E\u5230\u8FBE\u897F\u5929\u89C1\u5230\u5982\u6765\u4F5B\u7956\uFF0C\u6700\u7EC8\u4E94\u5723\u6210\u771F\u7684\u6545\u4E8B\u3002`,
+      imgurl: "/static/Rebook/Rebook1.jpg"
+    }
+  ];
   const _sfc_main$d = {
+    data() {
+      return {
+        calHeight: 0,
+        statusBarHeight: this.$statusBarHeight,
+        tabIndex: 0,
+        showCancalColStatus: false,
+        collectedArr: [],
+        cancelColID: 0
+      };
+    },
+    mounted() {
+      unit.calSurplusHeight({
+        pageId: this,
+        pos: "cal",
+        success: (val) => this.calHeight = val
+      });
+      this.initData();
+    },
+    watch: {
+      showCancalColStatus(val) {
+        if (val) {
+          uni.hideTabBar({
+            animation: true
+          });
+        } else {
+          uni.showTabBar({
+            animation: true
+          });
+        }
+      }
+    },
+    methods: {
+      getTabIndex(index) {
+        this.tabIndex = index;
+      },
+      swiperChangeIndex(e) {
+        this.getTabIndex(e.detail.current);
+      },
+      getID(id) {
+        this.cancelColID = id;
+      },
+      showCancelCol(bol) {
+        this.$refs.pop.open();
+      },
+      closeCancelCol(bol) {
+        this.$refs.pop.close();
+      },
+      changeStatus(e) {
+        this.showCancalColStatus = e.show;
+      },
+      initData() {
+        this.collectedArr.push(...books);
+      },
+      IDToIndex(id) {
+        return this.collectedArr.findIndex((item) => item.id === id);
+      },
+      cancelCollect() {
+        let index = this.IDToIndex(this.cancelColID);
+        this.collectedArr.splice(index, 1);
+        this.closeCancelCol();
+      }
+    }
+  };
+  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_search = resolveEasycom(vue.resolveDynamicComponent("search"), __easycom_0$2);
+    const _component_tabTop = resolveEasycom(vue.resolveDynamicComponent("tabTop"), __easycom_1$1);
+    const _component_collections = resolveEasycom(vue.resolveDynamicComponent("collections"), __easycom_2$2);
+    const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
+    const _component_uni_popup = resolveEasycom(vue.resolveDynamicComponent("uni-popup"), __easycom_2$1);
+    return vue.openBlock(), vue.createElementBlock("view", null, [
+      vue.createElementVNode("view", {
+        class: "cal",
+        style: vue.normalizeStyle({ height: $data.statusBarHeight + "px" })
+      }, null, 4),
+      vue.createVNode(_component_search, { class: "cal" }),
+      vue.createVNode(_component_tabTop, {
+        class: "cal",
+        tabArr: ["\u6211\u7684\u6536\u85CF", "\u6536\u542C\u5386\u53F2"],
+        onGetTabIndex: $options.getTabIndex,
+        tabIndex: $data.tabIndex
+      }, null, 8, ["onGetTabIndex", "tabIndex"]),
+      vue.createElementVNode("swiper", {
+        style: vue.normalizeStyle({ height: $data.calHeight + "rpx" }),
+        current: $data.tabIndex,
+        onChange: _cache[0] || (_cache[0] = (...args) => $options.swiperChangeIndex && $options.swiperChangeIndex(...args))
+      }, [
+        vue.createElementVNode("swiper-item", null, [
+          vue.createElementVNode("scroll-view", {
+            "scroll-y": "",
+            style: vue.normalizeStyle({ height: $data.calHeight + "rpx" })
+          }, [
+            (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($data.collectedArr, (item) => {
+              return vue.openBlock(), vue.createBlock(_component_collections, {
+                key: item.id,
+                bookID: item.id,
+                bookImgUrl: item.imgurl,
+                bookName: item.name,
+                bookSynopsis: item.synopsis,
+                onGetID: $options.getID,
+                onShowCancelCol: $options.showCancelCol
+              }, null, 8, ["bookID", "bookImgUrl", "bookName", "bookSynopsis", "onGetID", "onShowCancelCol"]);
+            }), 128))
+          ], 4)
+        ]),
+        vue.createElementVNode("swiper-item", null, [
+          vue.createElementVNode("scroll-view", { "scroll-y": "" }, [
+            vue.createElementVNode("view")
+          ])
+        ])
+      ], 44, ["current"]),
+      vue.createVNode(_component_uni_popup, {
+        ref: "pop",
+        type: "bottom",
+        onChange: $options.changeStatus
+      }, {
+        default: vue.withCtx(() => [
+          vue.createElementVNode("view", { class: "bg-white" }, [
+            vue.createElementVNode("view", {
+              class: "flex align-center px-2",
+              style: { "height": "100rpx" },
+              onClick: _cache[1] || (_cache[1] = (...args) => $options.cancelCollect && $options.cancelCollect(...args))
+            }, [
+              vue.createVNode(_component_myIcon, {
+                type: "icon-xingxing",
+                color: "text-danger"
+              }),
+              vue.createElementVNode("text", { class: "ml-2 font" }, "\u53D6\u6D88\u6536\u85CF")
+            ]),
+            vue.createElementVNode("view", {
+              class: "bg-hover-light",
+              style: { "height": "15rpx" }
+            }),
+            vue.createElementVNode("view", {
+              class: "text-center",
+              style: { "height": "110rpx", "line-height": "110rpx" },
+              onClick: _cache[2] || (_cache[2] = (...args) => $options.closeCancelCol && $options.closeCancelCol(...args))
+            }, "\u53D6\u6D88")
+          ])
+        ]),
+        _: 1
+      }, 8, ["onChange"])
+    ]);
+  }
+  const PagesCollectionCollection = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/collection/collection.vue"]]);
+  let sortResources = [
+    {
+      id: 1,
+      text: "\u6709\u58F0\u4E66",
+      content: ["\u8A00\u60C5", "\u60AC\u7591", "\u90FD\u5E02", "\u5E7B\u60F3", "\u6B66\u4FA0", "\u5386\u53F2"]
+    },
+    {
+      id: 2,
+      text: "\u7545\u9500\u4E66",
+      content: ["\u793E\u79D1", "\u7ECF\u7BA1", "\u6587\u5B66", "\u52B1\u5FD7", "\u540D\u8457", "\u751F\u6D3B"]
+    },
+    {
+      id: 3,
+      text: "\u513F\u7AE5",
+      content: ["\u6545\u4E8B", "\u513F\u7AE5", "\u52A8\u753B", "\u79D1\u666E", "\u540D\u8457", "\u56FD\u5B66"]
+    },
+    {
+      id: 4,
+      text: "\u76F8\u58F0\u8BC4\u4E66",
+      content: ["\u5355\u7530\u82B3", "\u90ED\u5FB7\u7EB2", "\u70ED\u95E8\u76F8\u58F0", "\u5355\u53E3\u76F8\u58F0", "\u540D\u5BB6\u8BC4\u4E66", "\u65B0\u9510\u7B11\u5C06"]
+    },
+    {
+      id: 5,
+      text: "\u60C5\u611F\u751F\u6D3B",
+      content: ["\u7F8E\u5473\u6545\u4E8B", "\u4F34\u4F60\u5165\u7720", "\u6211\u8981\u604B\u7231", "\u4E24\u6027\u5A5A\u59FB", "\u5FC3\u7075\u63A2\u79D8", "\u60C5\u5546\u4FEE\u70BC"]
+    },
+    {
+      id: 6,
+      text: "\u4EBA\u6587",
+      content: ["\u7ECF\u5178\u540D\u8457", "\u4F5B\u5B66\u5FC3\u7075", "\u8BFB\u4E66\u4F1A", "\u8BD7\u8BCD\u6B4C\u8D4B", "\u7EAA\u5B9E\u6863\u6848", "\u540D\u5BB6\u8BB2\u5EA7"]
+    },
+    {
+      id: 7,
+      text: "\u5386\u53F2",
+      content: ["\u767E\u5BB6\u8BB2\u575B", "\u4E2D\u56FD\u53F2", "\u4E16\u754C\u53F2", "\u540D\u4EBA\u4F20", "\u4F83\u91CE\u53F2", "\u6625\u79CB\u6218\u56FD"]
+    },
+    {
+      id: 8,
+      text: "\u56FD\u5B66\u4E66\u9662",
+      content: ["\u7ECF\u5178", "\u767E\u5BB6\u8BB2\u575B", "\u56FD\u53F2", "\u8BD7\u6587", "\u8BF8\u5B50\u767E\u5BB6", "\u4F5B\u9053"]
+    },
+    {
+      id: 9,
+      text: "\u97F3\u4E50",
+      content: ["\u7EAF\u97F3\u4E50", "\u8001\u6B4C", "\u7FFB\u5531", "\u5F71\u89C6", "\u6B27\u7F8E", "\u53E4\u98CE"]
+    },
+    {
+      id: 10,
+      text: "\u82F1\u8BED",
+      content: ["\u53E3\u8BED", "\u6559\u6750", "\u8003\u8BD5", "\u5C11\u513F", "\u8BCD\u6C47", "\u804C\u573A"]
+    },
+    {
+      id: 11,
+      text: "\u6559\u80B2\u57F9\u8BAD",
+      content: ["\u540D\u4EBA\u6F14\u8BB2", "\u804C\u4E1A\u6280\u80FD", "\u4EBA\u9645\u6C9F\u901A", "\u5FC3\u7406\u8C03\u8282", "\u5BB6\u5EAD\u6559\u80B2", "\u9AD8\u6548\u5B66\u4E60"]
+    },
+    {
+      id: 12,
+      text: "\u5065\u5EB7\u517B\u8EAB",
+      content: ["\u9EC4\u5E1D\u5185\u7ECF", "\u5403\u51FA\u5065\u5EB7", "\u6211\u8981\u51CF\u80A5", "\u5341\u6708\u5988\u54AA", "\u4E24\u6027\u5965\u79D8", "\u8FD0\u52A8\u5065\u8EAB"]
+    },
+    {
+      id: 13,
+      text: "\u5E7F\u64AD\u5267",
+      content: ["\u73B0\u4EE3\u8A00\u60C5", "\u53E4\u4EE3\u8A00\u60C5", "\u5168\u5E74\u9F84", "\u5267\u60C5\u6B4C", "cv\u8BBF\u8C08\u4E0E\u6D3B\u52A8", "\u5FC3\u7075\u65E9\u64CD"]
+    },
+    {
+      id: 14,
+      text: "\u620F\u66F2",
+      content: ["\u620F\u66F2\u5927\u5168", "\u534E\u7F8E\u4EAC\u5267", "\u6E29\u5A49\u8D8A\u5267", "\u660E\u5FEB\u9EC4\u6885", "\u591A\u5F69\u6CF8\u5267", "\u5178\u96C5\u6606\u5267"]
+    }
+  ];
+  const _sfc_main$c = {
+    data() {
+      return {
+        statusBarHeight: this.$statusBarHeight,
+        calHeight: 0,
+        rightIndex: "right0",
+        leftIndex: 0
+      };
+    },
+    computed: {
+      leftListRes() {
+        return sortResources.map((item) => item.text);
+      },
+      rightListRes() {
+        return sortResources;
+      }
+    },
+    mounted() {
+      unit.calSurplusHeight({
+        pageID: this,
+        pos: "cal",
+        isTabBarPage: true,
+        success: (val) => this.calHeight = val
+      });
+    },
+    methods: {
+      leftToright(i) {
+        this.rightIndex = "right" + i;
+      },
+      rightToLeft(e) {
+        let top = e.detail.scrollTop;
+        let standardVal = unit.Topx(320);
+        let curIndex = Math.round(top / standardVal);
+        this.leftIndex = curIndex;
+      }
+    }
+  };
+  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_search = resolveEasycom(vue.resolveDynamicComponent("search"), __easycom_0$2);
+    const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
+    return vue.openBlock(), vue.createElementBlock("view", null, [
+      vue.createElementVNode("view", {
+        class: "cal",
+        style: vue.normalizeStyle({ height: $data.statusBarHeight + "px" })
+      }, null, 4),
+      vue.createVNode(_component_search, { class: "cal" }),
+      vue.createElementVNode("view", {
+        class: "cal",
+        style: { "height": "20rpx" }
+      }),
+      vue.createElementVNode("view", {
+        class: "flex",
+        style: { "background-color": "#f0f3f8" }
+      }, [
+        vue.createElementVNode("scroll-view", {
+          "scroll-y": "",
+          class: "font text-light-black",
+          style: vue.normalizeStyle([{ "width": "180rpx", "padding": "0 20rpx" }, { height: $data.calHeight + "rpx" }])
+        }, [
+          (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($options.leftListRes, (item, index) => {
+            return vue.openBlock(), vue.createElementBlock("view", {
+              key: index,
+              class: vue.normalizeClass(["animated", { "selected pulse font font-weight-bold": $data.leftIndex == index }]),
+              style: { "height": "150rpx", "line-height": "150rpx" },
+              onClick: ($event) => $options.leftToright(index)
+            }, vue.toDisplayString(item), 11, ["onClick"]);
+          }), 128))
+        ], 4),
+        vue.createElementVNode("scroll-view", {
+          "scroll-y": "",
+          "scroll-into-view": $data.rightIndex,
+          "scroll-with-animation": "",
+          onScroll: _cache[0] || (_cache[0] = (...args) => $options.rightToLeft && $options.rightToLeft(...args)),
+          style: vue.normalizeStyle({ height: $data.calHeight + "rpx" })
+        }, [
+          (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($options.rightListRes, (item, index) => {
+            return vue.openBlock(), vue.createElementBlock("view", {
+              key: index,
+              style: { "height": "250rpx", "margin-bottom": "70rpx" },
+              id: `right${index}`
+            }, [
+              vue.createElementVNode("view", {
+                class: "text-center flex justify-center",
+                style: { "height": "80rpx", "line-height": "80rpx" }
+              }, [
+                vue.createElementVNode("text", { class: "mr-1" }, vue.toDisplayString(item.text), 1),
+                vue.createVNode(_component_myIcon, {
+                  type: "icon-youjiantou",
+                  size: "40"
+                })
+              ]),
+              vue.createElementVNode("view", {
+                class: "flex flex-wrap bg-white rounded font",
+                style: { "height": "170rpx" }
+              }, [
+                (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList(item.content, (mitem, mindex) => {
+                  return vue.openBlock(), vue.createElementBlock("view", {
+                    key: mindex,
+                    class: "flex align-center justify-center",
+                    style: { "width": "calc(100% / 3)" }
+                  }, vue.toDisplayString(mitem), 1);
+                }), 128))
+              ])
+            ], 8, ["id"]);
+          }), 128)),
+          vue.createElementVNode("view", {
+            class: "",
+            style: vue.normalizeStyle({ height: $data.calHeight - 320 + "rpx" })
+          }, null, 4)
+        ], 44, ["scroll-into-view"])
+      ])
+    ]);
+  }
+  const PagesSortSort = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/sort/sort.vue"]]);
+  const _sfc_main$b = {
     data() {
       return {};
     },
     methods: {}
   };
-  function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view");
   }
-  const PagesMineMine = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$c], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/mine/mine.vue"]]);
-  const _sfc_main$c = {
+  const PagesMineMine = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/mine/mine.vue"]]);
+  const _sfc_main$a = {
     name: "pageTitle",
     props: {
       theme: {
@@ -1813,7 +3072,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
     return vue.openBlock(), vue.createElementBlock("view", {
       style: vue.normalizeStyle({ paddingTop: $data.statusBarHeight + 10 + "px" }),
@@ -1840,7 +3099,7 @@ if (uni.restoreGlobal) {
       ], 6)
     ], 6);
   }
-  const __easycom_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__file", "E:/code/uni-app/items/xiaoshuo/components/pageTitle/pageTitle.vue"]]);
+  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__file", "E:/code/uni-app/items/xiaoshuo/components/pageTitle/pageTitle.vue"]]);
   const isObject = (val) => val !== null && typeof val === "object";
   const defaultDelimiters = ["{", "}"];
   class BaseFormatter {
@@ -2148,7 +3407,7 @@ if (uni.restoreGlobal) {
   const {
     t
   } = initVueI18n(messages);
-  const _sfc_main$b = {
+  const _sfc_main$9 = {
     name: "UniLoadMore",
     emits: ["clickLoadMore"],
     props: {
@@ -2229,7 +3488,7 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
+  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view", {
       class: "uni-load-more",
       onClick: _cache[0] || (_cache[0] = (...args) => $options.onClick && $options.onClick(...args))
@@ -2268,7 +3527,7 @@ if (uni.restoreGlobal) {
       }, vue.toDisplayString($props.status === "more" ? $options.contentdownText : $props.status === "loading" ? $options.contentrefreshText : $options.contentnomoreText), 5)) : vue.createCommentVNode("v-if", true)
     ]);
   }
-  const __easycom_1$1 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__scopeId", "data-v-9245e42c"], ["__file", "E:/code/uni-app/items/xiaoshuo/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue"]]);
+  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__scopeId", "data-v-9245e42c"], ["__file", "E:/code/uni-app/items/xiaoshuo/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue"]]);
   let ListResources = {
     isLoadMore: "\u4E0A\u62C9\u52A0\u8F7D\u663E\u793A\u66F4\u591A",
     books: [
@@ -2346,7 +3605,7 @@ if (uni.restoreGlobal) {
       }
     ]
   };
-  const _sfc_main$a = {
+  const _sfc_main$8 = {
     data() {
       return {
         bookList: [],
@@ -2361,10 +3620,10 @@ if (uni.restoreGlobal) {
     },
     methods: {
       initLoadmore() {
-        let books = ListResources.books;
+        let books2 = ListResources.books;
         setTimeout(() => {
-          if (books.length) {
-            this.bookList = [...this.bookList, ...books];
+          if (books2.length) {
+            this.bookList = [...this.bookList, ...books2];
             if (this.bookList.length > 40) {
               ListResources.isLoadMore = "\u6CA1\u6709\u66F4\u591A\u4E86";
             }
@@ -2388,10 +3647,10 @@ if (uni.restoreGlobal) {
       }
     }
   };
-  function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_pageTitle = resolveEasycom(vue.resolveDynamicComponent("pageTitle"), __easycom_0$1);
+  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_pageTitle = resolveEasycom(vue.resolveDynamicComponent("pageTitle"), __easycom_0);
     const _component_booklist = resolveEasycom(vue.resolveDynamicComponent("booklist"), __easycom_1$2);
-    const _component_uni_load_more = resolveEasycom(vue.resolveDynamicComponent("uni-load-more"), __easycom_1$1);
+    const _component_uni_load_more = resolveEasycom(vue.resolveDynamicComponent("uni-load-more"), __easycom_2);
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createVNode(_component_pageTitle, null, {
         default: vue.withCtx(() => [
@@ -2403,27 +3662,7 @@ if (uni.restoreGlobal) {
       vue.createVNode(_component_uni_load_more, { status: $data.loadStatus }, null, 8, ["status"])
     ]);
   }
-  const PagesReadListReadList = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$9], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/readList/readList.vue"]]);
-  const _sfc_main$9 = {
-    data() {
-      return {};
-    },
-    methods: {}
-  };
-  function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("view");
-  }
-  const PagesListenNovalListenNoval = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$8], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/listenNoval/listenNoval.vue"]]);
-  const _sfc_main$8 = {
-    data() {
-      return {};
-    },
-    methods: {}
-  };
-  function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("view");
-  }
-  const PagesListenMusicListenMusic = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/listenMusic/listenMusic.vue"]]);
+  const PagesReadListReadList = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$7], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/readList/readList.vue"]]);
   const _sfc_main$7 = {
     data() {
       return {};
@@ -2433,695 +3672,27 @@ if (uni.restoreGlobal) {
   function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
     return vue.openBlock(), vue.createElementBlock("view");
   }
-  const PagesListenKnowledgeListenKnowledge = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/listenKnowledge/listenKnowledge.vue"]]);
-  class MPAnimation {
-    constructor(options, _this) {
-      this.options = options;
-      this.animation = uni.createAnimation(options);
-      this.currentStepAnimates = {};
-      this.next = 0;
-      this.$ = _this;
-    }
-    _nvuePushAnimates(type, args) {
-      let aniObj = this.currentStepAnimates[this.next];
-      let styles = {};
-      if (!aniObj) {
-        styles = {
-          styles: {},
-          config: {}
-        };
-      } else {
-        styles = aniObj;
-      }
-      if (animateTypes1.includes(type)) {
-        if (!styles.styles.transform) {
-          styles.styles.transform = "";
-        }
-        let unit2 = "";
-        if (type === "rotate") {
-          unit2 = "deg";
-        }
-        styles.styles.transform += `${type}(${args + unit2}) `;
-      } else {
-        styles.styles[type] = `${args}`;
-      }
-      this.currentStepAnimates[this.next] = styles;
-    }
-    _animateRun(styles = {}, config = {}) {
-      let ref = this.$.$refs["ani"].ref;
-      if (!ref)
-        return;
-      return new Promise((resolve, reject) => {
-        nvueAnimation.transition(ref, {
-          styles,
-          ...config
-        }, (res) => {
-          resolve();
-        });
-      });
-    }
-    _nvueNextAnimate(animates, step = 0, fn) {
-      let obj = animates[step];
-      if (obj) {
-        let {
-          styles,
-          config
-        } = obj;
-        this._animateRun(styles, config).then(() => {
-          step += 1;
-          this._nvueNextAnimate(animates, step, fn);
-        });
-      } else {
-        this.currentStepAnimates = {};
-        typeof fn === "function" && fn();
-        this.isEnd = true;
-      }
-    }
-    step(config = {}) {
-      this.animation.step(config);
-      return this;
-    }
-    run(fn) {
-      this.$.animationData = this.animation.export();
-      this.$.timer = setTimeout(() => {
-        typeof fn === "function" && fn();
-      }, this.$.durationTime);
-    }
-  }
-  const animateTypes1 = [
-    "matrix",
-    "matrix3d",
-    "rotate",
-    "rotate3d",
-    "rotateX",
-    "rotateY",
-    "rotateZ",
-    "scale",
-    "scale3d",
-    "scaleX",
-    "scaleY",
-    "scaleZ",
-    "skew",
-    "skewX",
-    "skewY",
-    "translate",
-    "translate3d",
-    "translateX",
-    "translateY",
-    "translateZ"
-  ];
-  const animateTypes2 = ["opacity", "backgroundColor"];
-  const animateTypes3 = ["width", "height", "left", "right", "top", "bottom"];
-  animateTypes1.concat(animateTypes2, animateTypes3).forEach((type) => {
-    MPAnimation.prototype[type] = function(...args) {
-      this.animation[type](...args);
-      return this;
-    };
-  });
-  function createAnimation(option, _this) {
-    if (!_this)
-      return;
-    clearTimeout(_this.timer);
-    return new MPAnimation(option, _this);
-  }
+  const PagesListenNovalListenNoval = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$6], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/listenNoval/listenNoval.vue"]]);
   const _sfc_main$6 = {
-    name: "uniTransition",
-    emits: ["click", "change"],
-    props: {
-      show: {
-        type: Boolean,
-        default: false
-      },
-      modeClass: {
-        type: [Array, String],
-        default() {
-          return "fade";
-        }
-      },
-      duration: {
-        type: Number,
-        default: 300
-      },
-      styles: {
-        type: Object,
-        default() {
-          return {};
-        }
-      },
-      customClass: {
-        type: String,
-        default: ""
-      }
-    },
     data() {
-      return {
-        isShow: false,
-        transform: "",
-        opacity: 1,
-        animationData: {},
-        durationTime: 300,
-        config: {}
-      };
+      return {};
     },
-    watch: {
-      show: {
-        handler(newVal) {
-          if (newVal) {
-            this.open();
-          } else {
-            if (this.isShow) {
-              this.close();
-            }
-          }
-        },
-        immediate: true
-      }
-    },
-    computed: {
-      stylesObject() {
-        let styles = {
-          ...this.styles,
-          "transition-duration": this.duration / 1e3 + "s"
-        };
-        let transform = "";
-        for (let i in styles) {
-          let line = this.toLine(i);
-          transform += line + ":" + styles[i] + ";";
-        }
-        return transform;
-      },
-      transformStyles() {
-        return "transform:" + this.transform + ";opacity:" + this.opacity + ";" + this.stylesObject;
-      }
-    },
-    created() {
-      this.config = {
-        duration: this.duration,
-        timingFunction: "ease",
-        transformOrigin: "50% 50%",
-        delay: 0
-      };
-      this.durationTime = this.duration;
-    },
-    methods: {
-      init(obj = {}) {
-        if (obj.duration) {
-          this.durationTime = obj.duration;
-        }
-        this.animation = createAnimation(Object.assign(this.config, obj), this);
-      },
-      onClick() {
-        this.$emit("click", {
-          detail: this.isShow
-        });
-      },
-      step(obj, config = {}) {
-        if (!this.animation)
-          return;
-        for (let i in obj) {
-          try {
-            if (typeof obj[i] === "object") {
-              this.animation[i](...obj[i]);
-            } else {
-              this.animation[i](obj[i]);
-            }
-          } catch (e) {
-            formatAppLog("error", "at uni_modules/uni-transition/components/uni-transition/uni-transition.vue:139", `\u65B9\u6CD5 ${i} \u4E0D\u5B58\u5728`);
-          }
-        }
-        this.animation.step(config);
-        return this;
-      },
-      run(fn) {
-        if (!this.animation)
-          return;
-        this.animation.run(fn);
-      },
-      open() {
-        clearTimeout(this.timer);
-        this.transform = "";
-        this.isShow = true;
-        let { opacity, transform } = this.styleInit(false);
-        if (typeof opacity !== "undefined") {
-          this.opacity = opacity;
-        }
-        this.transform = transform;
-        this.$nextTick(() => {
-          this.timer = setTimeout(() => {
-            this.animation = createAnimation(this.config, this);
-            this.tranfromInit(false).step();
-            this.animation.run();
-            this.$emit("change", {
-              detail: this.isShow
-            });
-          }, 20);
-        });
-      },
-      close(type) {
-        if (!this.animation)
-          return;
-        this.tranfromInit(true).step().run(() => {
-          this.isShow = false;
-          this.animationData = null;
-          this.animation = null;
-          let { opacity, transform } = this.styleInit(false);
-          this.opacity = opacity || 1;
-          this.transform = transform;
-          this.$emit("change", {
-            detail: this.isShow
-          });
-        });
-      },
-      styleInit(type) {
-        let styles = {
-          transform: ""
-        };
-        let buildStyle = (type2, mode) => {
-          if (mode === "fade") {
-            styles.opacity = this.animationType(type2)[mode];
-          } else {
-            styles.transform += this.animationType(type2)[mode] + " ";
-          }
-        };
-        if (typeof this.modeClass === "string") {
-          buildStyle(type, this.modeClass);
-        } else {
-          this.modeClass.forEach((mode) => {
-            buildStyle(type, mode);
-          });
-        }
-        return styles;
-      },
-      tranfromInit(type) {
-        let buildTranfrom = (type2, mode) => {
-          let aniNum = null;
-          if (mode === "fade") {
-            aniNum = type2 ? 0 : 1;
-          } else {
-            aniNum = type2 ? "-100%" : "0";
-            if (mode === "zoom-in") {
-              aniNum = type2 ? 0.8 : 1;
-            }
-            if (mode === "zoom-out") {
-              aniNum = type2 ? 1.2 : 1;
-            }
-            if (mode === "slide-right") {
-              aniNum = type2 ? "100%" : "0";
-            }
-            if (mode === "slide-bottom") {
-              aniNum = type2 ? "100%" : "0";
-            }
-          }
-          this.animation[this.animationMode()[mode]](aniNum);
-        };
-        if (typeof this.modeClass === "string") {
-          buildTranfrom(type, this.modeClass);
-        } else {
-          this.modeClass.forEach((mode) => {
-            buildTranfrom(type, mode);
-          });
-        }
-        return this.animation;
-      },
-      animationType(type) {
-        return {
-          fade: type ? 1 : 0,
-          "slide-top": `translateY(${type ? "0" : "-100%"})`,
-          "slide-right": `translateX(${type ? "0" : "100%"})`,
-          "slide-bottom": `translateY(${type ? "0" : "100%"})`,
-          "slide-left": `translateX(${type ? "0" : "-100%"})`,
-          "zoom-in": `scaleX(${type ? 1 : 0.8}) scaleY(${type ? 1 : 0.8})`,
-          "zoom-out": `scaleX(${type ? 1 : 1.2}) scaleY(${type ? 1 : 1.2})`
-        };
-      },
-      animationMode() {
-        return {
-          fade: "opacity",
-          "slide-top": "translateY",
-          "slide-right": "translateX",
-          "slide-bottom": "translateY",
-          "slide-left": "translateX",
-          "zoom-in": "scale",
-          "zoom-out": "scale"
-        };
-      },
-      toLine(name) {
-        return name.replace(/([A-Z])/g, "-$1").toLowerCase();
-      }
-    }
+    methods: {}
   };
   function _sfc_render$5(_ctx, _cache, $props, $setup, $data, $options) {
-    return $data.isShow ? (vue.openBlock(), vue.createElementBlock("view", {
-      key: 0,
-      ref: "ani",
-      animation: $data.animationData,
-      class: vue.normalizeClass($props.customClass),
-      style: vue.normalizeStyle($options.transformStyles),
-      onClick: _cache[0] || (_cache[0] = (...args) => $options.onClick && $options.onClick(...args))
-    }, [
-      vue.renderSlot(_ctx.$slots, "default")
-    ], 14, ["animation"])) : vue.createCommentVNode("v-if", true);
+    return vue.openBlock(), vue.createElementBlock("view");
   }
-  const __easycom_0 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__file", "E:/code/uni-app/items/xiaoshuo/uni_modules/uni-transition/components/uni-transition/uni-transition.vue"]]);
+  const PagesListenMusicListenMusic = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$5], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/listenMusic/listenMusic.vue"]]);
   const _sfc_main$5 = {
-    name: "uniPopup",
-    components: {},
-    emits: ["change", "maskClick"],
-    props: {
-      animation: {
-        type: Boolean,
-        default: true
-      },
-      type: {
-        type: String,
-        default: "center"
-      },
-      isMaskClick: {
-        type: Boolean,
-        default: null
-      },
-      maskClick: {
-        type: Boolean,
-        default: null
-      },
-      backgroundColor: {
-        type: String,
-        default: "none"
-      },
-      safeArea: {
-        type: Boolean,
-        default: true
-      },
-      maskBackgroundColor: {
-        type: String,
-        default: "rgba(0, 0, 0, 0.4)"
-      }
-    },
-    watch: {
-      type: {
-        handler: function(type) {
-          if (!this.config[type])
-            return;
-          this[this.config[type]](true);
-        },
-        immediate: true
-      },
-      isDesktop: {
-        handler: function(newVal) {
-          if (!this.config[newVal])
-            return;
-          this[this.config[this.type]](true);
-        },
-        immediate: true
-      },
-      maskClick: {
-        handler: function(val) {
-          this.mkclick = val;
-        },
-        immediate: true
-      },
-      isMaskClick: {
-        handler: function(val) {
-          this.mkclick = val;
-        },
-        immediate: true
-      },
-      showPopup(show) {
-      }
-    },
     data() {
-      return {
-        duration: 300,
-        ani: [],
-        showPopup: false,
-        showTrans: false,
-        popupWidth: 0,
-        popupHeight: 0,
-        config: {
-          top: "top",
-          bottom: "bottom",
-          center: "center",
-          left: "left",
-          right: "right",
-          message: "top",
-          dialog: "center",
-          share: "bottom"
-        },
-        maskClass: {
-          position: "fixed",
-          bottom: 0,
-          top: 0,
-          left: 0,
-          right: 0,
-          backgroundColor: "rgba(0, 0, 0, 0.4)"
-        },
-        transClass: {
-          position: "fixed",
-          left: 0,
-          right: 0
-        },
-        maskShow: true,
-        mkclick: true,
-        popupstyle: this.isDesktop ? "fixforpc-top" : "top"
-      };
+      return {};
     },
-    computed: {
-      isDesktop() {
-        return this.popupWidth >= 500 && this.popupHeight >= 500;
-      },
-      bg() {
-        if (this.backgroundColor === "" || this.backgroundColor === "none") {
-          return "transparent";
-        }
-        return this.backgroundColor;
-      }
-    },
-    mounted() {
-      const fixSize = () => {
-        const {
-          windowWidth,
-          windowHeight,
-          windowTop,
-          safeArea,
-          screenHeight: screenHeight2,
-          safeAreaInsets
-        } = uni.getSystemInfoSync();
-        this.popupWidth = windowWidth;
-        this.popupHeight = windowHeight + (windowTop || 0);
-        if (safeArea && this.safeArea) {
-          this.safeAreaInsets = safeAreaInsets.bottom;
-        } else {
-          this.safeAreaInsets = 0;
-        }
-      };
-      fixSize();
-    },
-    unmounted() {
-      this.setH5Visible();
-    },
-    created() {
-      if (this.isMaskClick === null && this.maskClick === null) {
-        this.mkclick = true;
-      } else {
-        this.mkclick = this.isMaskClick !== null ? this.isMaskClick : this.maskClick;
-      }
-      if (this.animation) {
-        this.duration = 300;
-      } else {
-        this.duration = 0;
-      }
-      this.messageChild = null;
-      this.clearPropagation = false;
-      this.maskClass.backgroundColor = this.maskBackgroundColor;
-    },
-    methods: {
-      setH5Visible() {
-      },
-      closeMask() {
-        this.maskShow = false;
-      },
-      disableMask() {
-        this.mkclick = false;
-      },
-      clear(e) {
-        e.stopPropagation();
-        this.clearPropagation = true;
-      },
-      open(direction) {
-        if (this.showPopup) {
-          clearTimeout(this.timer);
-          this.showPopup = false;
-        }
-        let innerType = ["top", "center", "bottom", "left", "right", "message", "dialog", "share"];
-        if (!(direction && innerType.indexOf(direction) !== -1)) {
-          direction = this.type;
-        }
-        if (!this.config[direction]) {
-          formatAppLog("error", "at uni_modules/uni-popup/components/uni-popup/uni-popup.vue:280", "\u7F3A\u5C11\u7C7B\u578B\uFF1A", direction);
-          return;
-        }
-        this[this.config[direction]]();
-        this.$emit("change", {
-          show: true,
-          type: direction
-        });
-      },
-      close(type) {
-        this.showTrans = false;
-        this.$emit("change", {
-          show: false,
-          type: this.type
-        });
-        clearTimeout(this.timer);
-        this.timer = setTimeout(() => {
-          this.showPopup = false;
-        }, 300);
-      },
-      touchstart() {
-        this.clearPropagation = false;
-      },
-      onTap() {
-        if (this.clearPropagation) {
-          this.clearPropagation = false;
-          return;
-        }
-        this.$emit("maskClick");
-        if (!this.mkclick)
-          return;
-        this.close();
-      },
-      top(type) {
-        this.popupstyle = this.isDesktop ? "fixforpc-top" : "top";
-        this.ani = ["slide-top"];
-        this.transClass = {
-          position: "fixed",
-          left: 0,
-          right: 0,
-          backgroundColor: this.bg
-        };
-        if (type)
-          return;
-        this.showPopup = true;
-        this.showTrans = true;
-        this.$nextTick(() => {
-          if (this.messageChild && this.type === "message") {
-            this.messageChild.timerClose();
-          }
-        });
-      },
-      bottom(type) {
-        this.popupstyle = "bottom";
-        this.ani = ["slide-bottom"];
-        this.transClass = {
-          position: "fixed",
-          left: 0,
-          right: 0,
-          bottom: 0,
-          paddingBottom: this.safeAreaInsets + "px",
-          backgroundColor: this.bg
-        };
-        if (type)
-          return;
-        this.showPopup = true;
-        this.showTrans = true;
-      },
-      center(type) {
-        this.popupstyle = "center";
-        this.ani = ["zoom-out", "fade"];
-        this.transClass = {
-          position: "fixed",
-          display: "flex",
-          flexDirection: "column",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          top: 0,
-          justifyContent: "center",
-          alignItems: "center"
-        };
-        if (type)
-          return;
-        this.showPopup = true;
-        this.showTrans = true;
-      },
-      left(type) {
-        this.popupstyle = "left";
-        this.ani = ["slide-left"];
-        this.transClass = {
-          position: "fixed",
-          left: 0,
-          bottom: 0,
-          top: 0,
-          backgroundColor: this.bg,
-          display: "flex",
-          flexDirection: "column"
-        };
-        if (type)
-          return;
-        this.showPopup = true;
-        this.showTrans = true;
-      },
-      right(type) {
-        this.popupstyle = "right";
-        this.ani = ["slide-right"];
-        this.transClass = {
-          position: "fixed",
-          bottom: 0,
-          right: 0,
-          top: 0,
-          backgroundColor: this.bg,
-          display: "flex",
-          flexDirection: "column"
-        };
-        if (type)
-          return;
-        this.showPopup = true;
-        this.showTrans = true;
-      }
-    }
+    methods: {}
   };
   function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_uni_transition = resolveEasycom(vue.resolveDynamicComponent("uni-transition"), __easycom_0);
-    return $data.showPopup ? (vue.openBlock(), vue.createElementBlock("view", {
-      key: 0,
-      class: vue.normalizeClass(["uni-popup", [$data.popupstyle, $options.isDesktop ? "fixforpc-z-index" : ""]])
-    }, [
-      vue.createElementVNode("view", {
-        onTouchstart: _cache[1] || (_cache[1] = (...args) => $options.touchstart && $options.touchstart(...args))
-      }, [
-        $data.maskShow ? (vue.openBlock(), vue.createBlock(_component_uni_transition, {
-          key: "1",
-          name: "mask",
-          "mode-class": "fade",
-          styles: $data.maskClass,
-          duration: $data.duration,
-          show: $data.showTrans,
-          onClick: $options.onTap
-        }, null, 8, ["styles", "duration", "show", "onClick"])) : vue.createCommentVNode("v-if", true),
-        vue.createVNode(_component_uni_transition, {
-          key: "2",
-          "mode-class": $data.ani,
-          name: "content",
-          styles: $data.transClass,
-          duration: $data.duration,
-          show: $data.showTrans,
-          onClick: $options.onTap
-        }, {
-          default: vue.withCtx(() => [
-            vue.createElementVNode("view", {
-              class: vue.normalizeClass(["uni-popup__wrapper", [$data.popupstyle]]),
-              style: vue.normalizeStyle({ backgroundColor: $options.bg }),
-              onClick: _cache[0] || (_cache[0] = (...args) => $options.clear && $options.clear(...args))
-            }, [
-              vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
-            ], 6)
-          ]),
-          _: 3
-        }, 8, ["mode-class", "styles", "duration", "show", "onClick"])
-      ], 32)
-    ], 2)) : vue.createCommentVNode("v-if", true);
+    return vue.openBlock(), vue.createElementBlock("view");
   }
-  const __easycom_2 = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__scopeId", "data-v-4dd3c44b"], ["__file", "E:/code/uni-app/items/xiaoshuo/uni_modules/uni-popup/components/uni-popup/uni-popup.vue"]]);
+  const PagesListenKnowledgeListenKnowledge = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["render", _sfc_render$4], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/listenKnowledge/listenKnowledge.vue"]]);
   const _sfc_main$4 = {
     data() {
       return {
@@ -3158,9 +3729,9 @@ if (uni.restoreGlobal) {
     }
   };
   function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_pageTitle = resolveEasycom(vue.resolveDynamicComponent("pageTitle"), __easycom_0$1);
+    const _component_pageTitle = resolveEasycom(vue.resolveDynamicComponent("pageTitle"), __easycom_0);
     const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
-    const _component_uni_popup = resolveEasycom(vue.resolveDynamicComponent("uni-popup"), __easycom_2);
+    const _component_uni_popup = resolveEasycom(vue.resolveDynamicComponent("uni-popup"), __easycom_2$1);
     return vue.openBlock(), vue.createElementBlock("view", {
       class: vue.normalizeClass(["main", $data.nightStatus ? "night-theme" : ""]),
       style: { "height": "100vh" }
@@ -3362,51 +3933,6 @@ if (uni.restoreGlobal) {
     ], 2);
   }
   const PagesMusicDetailMusicDetail = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$3], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/musicDetail/musicDetail.vue"]]);
-  const _sfc_main$3 = {
-    name: "tabTop",
-    props: {
-      tabArr: {
-        type: Array,
-        default: () => []
-      }
-    },
-    data() {
-      return {
-        tabIndex: 0
-      };
-    },
-    methods: {
-      changeTab(index) {
-        this.tabIndex = index;
-        this.$emit("getTabIndex", this.tabIndex);
-      }
-    }
-  };
-  function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("view", {
-      class: "flex align-center border",
-      style: { "height": "80rpx", "justify-content": "space-around" }
-    }, [
-      (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($props.tabArr, (item, index) => {
-        return vue.openBlock(), vue.createElementBlock("view", {
-          key: index,
-          class: "flex flex-column align-center justify-between",
-          style: { "height": "80rpx" }
-        }, [
-          vue.createElementVNode("view", {
-            class: vue.normalizeClass(["text-light-black pt-1 animated faster", index === $data.tabIndex ? "font-weight-bold pulse" : ""]),
-            onClick: ($event) => $options.changeTab(index)
-          }, vue.toDisplayString(item), 11, ["onClick"]),
-          index === $data.tabIndex ? (vue.openBlock(), vue.createElementBlock("view", {
-            key: 0,
-            class: "rounded animated zoomIn faster",
-            style: { "width": "80rpx", "height": "8rpx", "background-color": "#fb5f39" }
-          })) : vue.createCommentVNode("v-if", true)
-        ]);
-      }), 128))
-    ]);
-  }
-  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$2], ["__file", "E:/code/uni-app/items/xiaoshuo/components/tabTop/tabTop.vue"]]);
   const test = {
     name: "\u897F\u6E38\u8BB0",
     author: "\u5434\u627F\u6069",
@@ -5787,55 +6313,7 @@ if (uni.restoreGlobal) {
       }
     ]
   };
-  let screenWidth = uni.getSystemInfoSync().windowWidth, screenHeight = uni.getSystemInfoSync().windowHeight;
-  const Torpx = (num) => 750 * num / screenWidth, Topx = (num) => num * screenWidth / 750;
-  const getSystemHeight = ({
-    isRpx = true
-  }) => isRpx ? Torpx(screenHeight) : screenHeight;
-  const formatTime = (num) => {
-    let divisionNum = Math.floor(num / 60), remainderNum = Math.floor(num % 60), zero = (x) => "0".repeat(2 - String(x).length);
-    return `${zero(divisionNum) + divisionNum}:${zero(remainderNum) + remainderNum}`;
-  };
-  const getNodesHeightInfo = (optionObj) => {
-    let {
-      pageID,
-      pos,
-      success
-    } = optionObj;
-    let heightArr = [];
-    const query = uni.createSelectorQuery().in(pageID);
-    query.selectAll(`.${pos}`).boundingClientRect((data) => {
-      data.forEach((item) => heightArr.push(item.height));
-      success(heightArr);
-    }).exec();
-  };
-  const calSurplusHeight = (optionObj) => {
-    let {
-      pageID,
-      pos,
-      isRpx = true,
-      success
-    } = optionObj;
-    getNodesHeightInfo({
-      pageID,
-      pos,
-      success: (NodesHeightArr) => {
-        let usedTotalHeight = NodesHeightArr.reduce((preHeight, itemHeight) => preHeight + itemHeight);
-        let SurplusHeight = screenHeight - usedTotalHeight;
-        let SurplusHeightEND = isRpx ? Torpx(SurplusHeight) : SurplusHeight;
-        success(SurplusHeightEND);
-      }
-    });
-  };
-  const unit = {
-    Torpx,
-    Topx,
-    getSystemHeight,
-    formatTime,
-    getNodesHeightInfo,
-    calSurplusHeight
-  };
-  const _sfc_main$2 = {
+  const _sfc_main$3 = {
     data() {
       return {
         calHeight: 0,
@@ -5861,12 +6339,16 @@ if (uni.restoreGlobal) {
         uni.navigateTo({
           url: `/pages/reading/reading?chapterID=${id}`
         });
+      },
+      swiperCurrentChange(e) {
+        let i = e.detail.current;
+        this.getTabIndex(i);
       }
     }
   };
-  function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
-    const _component_pageTitle = resolveEasycom(vue.resolveDynamicComponent("pageTitle"), __easycom_0$1);
-    const _component_tabTop = resolveEasycom(vue.resolveDynamicComponent("tabTop"), __easycom_1);
+  function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
+    const _component_pageTitle = resolveEasycom(vue.resolveDynamicComponent("pageTitle"), __easycom_0);
+    const _component_tabTop = resolveEasycom(vue.resolveDynamicComponent("tabTop"), __easycom_1$1);
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createVNode(_component_pageTitle, {
         class: "cal",
@@ -5903,39 +6385,129 @@ if (uni.restoreGlobal) {
         vue.createVNode(_component_tabTop, {
           tabArr: ["\u8BE6\u60C5", "\u76EE\u5F55"],
           onGetTabIndex: $options.getTabIndex,
+          tabIndex: $data.tabIndex,
           class: "cal"
-        }, null, 8, ["onGetTabIndex"]),
-        $data.tabIndex === 0 ? (vue.openBlock(), vue.createElementBlock("scroll-view", {
-          key: 0,
-          "scroll-y": "",
-          class: "animated",
-          style: vue.normalizeStyle({ height: $data.calHeight + "rpx" })
+        }, null, 8, ["onGetTabIndex", "tabIndex"]),
+        vue.createElementVNode("swiper", {
+          style: vue.normalizeStyle({ height: $data.calHeight + "rpx" }),
+          current: $data.tabIndex,
+          onChange: _cache[0] || (_cache[0] = (...args) => $options.swiperCurrentChange && $options.swiperCurrentChange(...args))
         }, [
-          vue.createElementVNode("view", null, [
-            vue.createElementVNode("view", { class: "py-2 flex justify-center text-light-black" }, "--\u7B80\u4ECB--"),
-            vue.createElementVNode("view", {
-              class: "px-2 font-lg",
-              style: { "line-height": "80rpx" }
-            }, vue.toDisplayString($data.synopsis), 1)
+          vue.createElementVNode("swiper-item", null, [
+            vue.createCommentVNode(" \u8BE6\u60C5 "),
+            vue.createElementVNode("scroll-view", {
+              "scroll-y": "",
+              class: "animated"
+            }, [
+              vue.createElementVNode("view", null, [
+                vue.createElementVNode("view", { class: "py-2 flex justify-center text-light-black" }, "--\u7B80\u4ECB--"),
+                vue.createElementVNode("view", {
+                  class: "px-2 font-lg",
+                  style: { "line-height": "80rpx" }
+                }, vue.toDisplayString($data.synopsis), 1)
+              ])
+            ])
+          ]),
+          vue.createElementVNode("swiper-item", null, [
+            vue.createCommentVNode(" \u76EE\u5F55 "),
+            vue.createElementVNode("scroll-view", {
+              "scroll-y": "",
+              style: { "height": "1120rpx" }
+            }, [
+              (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($data.chapterCatalog, (item, index) => {
+                return vue.openBlock(), vue.createElementBlock("view", {
+                  key: item.id,
+                  class: "p-2 text-ellipsis border-bottom",
+                  "hover-class": "bg-light",
+                  onClick: ($event) => $options.toReading(item.id)
+                }, vue.toDisplayString(item.title), 9, ["onClick"]);
+              }), 128))
+            ])
           ])
-        ], 4)) : (vue.openBlock(), vue.createElementBlock("scroll-view", {
-          key: 1,
-          "scroll-y": "",
-          style: { "height": "1120rpx" }
-        }, [
-          (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($data.chapterCatalog, (item, index) => {
-            return vue.openBlock(), vue.createElementBlock("view", {
-              key: item.id,
-              class: "p-2 text-ellipsis border-bottom",
-              "hover-class": "bg-light",
-              onClick: ($event) => $options.toReading(item.id)
-            }, vue.toDisplayString(item.title), 9, ["onClick"]);
-          }), 128))
-        ]))
+        ], 44, ["current"])
       ])
     ]);
   }
-  const PagesBookDetailBookDetail = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/bookDetail/bookDetail.vue"]]);
+  const PagesBookDetailBookDetail = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$2], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/bookDetail/bookDetail.vue"]]);
+  const _sfc_main$2 = {
+    name: "UniDrawer",
+    components: {},
+    emits: ["change"],
+    props: {
+      mode: {
+        type: String,
+        default: ""
+      },
+      mask: {
+        type: Boolean,
+        default: true
+      },
+      maskClick: {
+        type: Boolean,
+        default: true
+      },
+      width: {
+        type: Number,
+        default: 220
+      }
+    },
+    data() {
+      return {
+        visibleSync: false,
+        showDrawer: false,
+        rightMode: false,
+        watchTimer: null,
+        drawerWidth: 220
+      };
+    },
+    created() {
+      this.drawerWidth = this.width;
+      this.rightMode = this.mode === "right";
+    },
+    methods: {
+      clear() {
+      },
+      close(type) {
+        if (type === "mask" && !this.maskClick || !this.visibleSync)
+          return;
+        this._change("showDrawer", "visibleSync", false);
+      },
+      open() {
+        if (this.visibleSync)
+          return;
+        this._change("visibleSync", "showDrawer", true);
+      },
+      _change(param1, param2, status) {
+        this[param1] = status;
+        if (this.watchTimer) {
+          clearTimeout(this.watchTimer);
+        }
+        this.watchTimer = setTimeout(() => {
+          this[param2] = status;
+          this.$emit("change", status);
+        }, status ? 50 : 300);
+      }
+    }
+  };
+  function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+    return $data.visibleSync ? (vue.openBlock(), vue.createElementBlock("view", {
+      key: 0,
+      class: vue.normalizeClass([{ "uni-drawer--visible": $data.showDrawer }, "uni-drawer"]),
+      onTouchmove: _cache[1] || (_cache[1] = vue.withModifiers((...args) => $options.clear && $options.clear(...args), ["stop", "prevent"]))
+    }, [
+      vue.createElementVNode("view", {
+        class: vue.normalizeClass(["uni-drawer__mask", { "uni-drawer__mask--visible": $data.showDrawer && $props.mask }]),
+        onClick: _cache[0] || (_cache[0] = ($event) => $options.close("mask"))
+      }, null, 2),
+      vue.createElementVNode("view", {
+        class: vue.normalizeClass(["uni-drawer__content", { "uni-drawer--right": $data.rightMode, "uni-drawer--left": !$data.rightMode, "uni-drawer__content--visible": $data.showDrawer }]),
+        style: vue.normalizeStyle({ width: $data.drawerWidth + "px" })
+      }, [
+        vue.renderSlot(_ctx.$slots, "default", {}, void 0, true)
+      ], 6)
+    ], 34)) : vue.createCommentVNode("v-if", true);
+  }
+  const __easycom_1 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$1], ["__scopeId", "data-v-f7c32d22"], ["__file", "E:/code/uni-app/items/xiaoshuo/uni_modules/uni-drawer/components/uni-drawer/uni-drawer.vue"]]);
   var startTag = /^<([-A-Za-z0-9_]+)((?:\s+[a-zA-Z_:][-a-zA-Z0-9_:.]*(?:\s*=\s*(?:(?:"[^"]*")|(?:'[^']*')|[^>\s]+))?)*)\s*(\/?)>/;
   var endTag = /^<\/([-A-Za-z0-9_]+)[^>]*>/;
   var attr = /([a-zA-Z_:][-a-zA-Z0-9_:.]*)(?:\s*=\s*(?:(?:"((?:\\.|[^"])*)")|(?:'((?:\\.|[^'])*)')|([^>\s]+)))?/g;
@@ -6183,7 +6755,7 @@ if (uni.restoreGlobal) {
             name: "\u591C\u95F4"
           }
         ],
-        themeIndex: 1
+        themeIndex: uni.getStorageSync("THEMEINDEX") || 0
       };
     },
     computed: {
@@ -6195,20 +6767,21 @@ if (uni.restoreGlobal) {
       }
     },
     onLoad(e) {
-      this.chapterID = e.chapterID;
-      this.preLoad();
-      this.delayLoad();
+      this.init(+e.chapterID);
+    },
+    created() {
+      let height = unit.getSystemHeight({ isRpx: true }) - unit.Torpx(this.statusBarHeight);
+      this.calHeight = Math.floor(height);
+      this.getBrightNess();
     },
     mounted() {
-      unit.calSurplusHeight({
-        pageID: this,
-        pos: "cal",
-        success: (val) => this.calHeight = val
-      });
-      this.getBrightNess();
     },
     methods: {
       htmlParser: parseHtml,
+      init(id) {
+        this.preLoad();
+        this.toPointChapter(id);
+      },
       changeSetStatus() {
         if ((this.typeFaceStatus || this.moreStatus) && !this.setStatus) {
           this.changeTypeFaceStatus(false);
@@ -6240,7 +6813,7 @@ if (uni.restoreGlobal) {
         this.changeIndex(e.detail.current);
       },
       changeCatelogStatus(bol) {
-        formatAppLog("log", "at pages/reading/reading.vue:182", bol);
+        formatAppLog("log", "at pages/reading/reading.vue:188", bol);
         if (bol) {
           this.$refs.drawer.open();
           this.changeSetStatus();
@@ -6286,6 +6859,7 @@ if (uni.restoreGlobal) {
       },
       themeIndexChange(id) {
         this.themeIndex = this.themes.findIndex((item) => item.id === id);
+        uni.setStorageSync("THEMEINDEX", this.themeIndex);
       },
       isnight() {
         this.themeIndex !== 4 ? this.themeIndexChange("nightTheme") : this.themeIndexChange("morningTheme");
@@ -6299,8 +6873,8 @@ if (uni.restoreGlobal) {
   };
   function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
-    const _component_uni_drawer = vue.resolveComponent("uni-drawer");
-    const _component_uni_load_more = resolveEasycom(vue.resolveDynamicComponent("uni-load-more"), __easycom_1$1);
+    const _component_uni_drawer = resolveEasycom(vue.resolveDynamicComponent("uni-drawer"), __easycom_1);
+    const _component_uni_load_more = resolveEasycom(vue.resolveDynamicComponent("uni-load-more"), __easycom_2);
     return vue.openBlock(), vue.createElementBlock("view", null, [
       vue.createElementVNode("view", {
         class: "cal",

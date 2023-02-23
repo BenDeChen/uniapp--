@@ -13,20 +13,23 @@
 	export default {
 		name:"tabTop",
 		props:{
+			tabIndex:{
+				type: Number,
+				default: 0
+			},
 			tabArr:{
 				type: Array,
 				default:()=>[]
 			}
 		},
 		data() {
-			return {
-				tabIndex: 0
+			return { 
 			};
 		},
 		methods:{
 			changeTab(index) {
-				this.tabIndex = index;
-				this.$emit("getTabIndex", this.tabIndex)
+				// this.tabIndex = index;
+				this.$emit("getTabIndex", index)
 			}
 		}
 	}

@@ -4,16 +4,14 @@ let screenWidth = uni.getSystemInfoSync().windowWidth, // 屏幕宽度
 
 
 // 基本方法	
-export const Torpx = num => 750 * num / screenWidth, // px转rpx
-	Topx = num => num * screenWidth / 750; // rpx转px
+const Torpx = num => 750 * num / screenWidth, // px转rpx
+	  Topx = num => num * screenWidth / 750; // rpx转px
 
-export const getSystemHeight = ({
-	isRpx = true
-}) => isRpx ? Torpx(screenHeight) : screenHeight; // 获取屏幕高度
+const getSystemHeight = (isRpx = true) => isRpx ? Torpx(screenHeight) : screenHeight; // 获取屏幕高度
 
 
 // 过滤器方法 (时间戳转时间)
-export const formatTime = num => {
+const formatTime = num => {
 	let divisionNum = Math.floor(num / 60),
 		remainderNum = Math.floor(num % 60),
 		zero = (x) => '0'.repeat(2 - String(x).length);
@@ -22,9 +20,9 @@ export const formatTime = num => {
 
 
 
-//以下方法在生命周期mounted之后调用,不支持nvue, 用pos -> className
+//以下方法在生命周期mounted以及mounted之后调用,不支持nvue, 用pos -> className
 // 获取各节点的高度信息
-export const getNodesHeightInfo = optionObj => {
+const getNodesHeightInfo = optionObj => {
 	let {
 		pageID,
 		pos,
@@ -39,11 +37,12 @@ export const getNodesHeightInfo = optionObj => {
 }
 
 // 计算剩余高度
-export const calSurplusHeight = optionObj => {
+const calSurplusHeight = optionObj => {
 	let {
 		pageID,
 		pos,
 		isRpx = true,
+		isTabBarPage = false,
 		success
 	} = optionObj;
 	getNodesHeightInfo({
@@ -51,13 +50,14 @@ export const calSurplusHeight = optionObj => {
 		pos,
 		success: NodesHeightArr => {
 			// 累加已使用高度
-			let usedTotalHeight = NodesHeightArr.reduce((preHeight, itemHeight) => preHeight +
-				itemHeight);
-			// 计算剩余高度
-			let SurplusHeight = screenHeight - usedTotalHeight;
+			let usedTotalHeight = NodesHeightArr.reduce((pre, item) => pre + item);
+			// 计算剩余高度(默认为非tabbar页面)
+			let SurHeight = isTabBarPage ? screenHeight - usedTotalHeight - 50 : screenHeight - usedTotalHeight;
 			// 判断是否转换为rpx形式(默认转换)
-			let SurplusHeightEND = isRpx ? Torpx(SurplusHeight) : SurplusHeight
-			success(SurplusHeightEND)
+			    SurHeight = isRpx ? Torpx(SurHeight) : SurHeight;
+			// 取整(防止震动)
+			let SurHeightEND = Math.floor(SurHeight)
+			success(SurHeightEND) 
 		}
 	})
 }
