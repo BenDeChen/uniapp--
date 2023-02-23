@@ -4,7 +4,7 @@
 		<view :class="curTheme"  class="fixed-top shadow animated slideInDown" v-if="setStatus">
 			<view class="" :style="{height: statusBarHeight + 'px'}"></view>
 			<view class="flex align-center" style="height: 80rpx;">
-				<myIcon type="icon-jiantou-copy" size="40" class="px-2"></myIcon>
+				<myIcon type="icon-jiantou-copy" size="40" class="px-2" @tap="quit"></myIcon>
 				<text>{{novalName}}</text>
 				<text class="flex-1 px-2 font-sm text-ellipsis">章节:{{curChapterTitle}}</text>
 			</view>
@@ -122,7 +122,7 @@
 						name: '夜间'
 					}
 				],
-				themeIndex: 1
+				themeIndex: uni.getStorageSync('THEMEINDEX') || 0
 			}
 		},
 		computed: {
@@ -134,20 +134,26 @@
 			}
 		},
 		onLoad(e) {
-			this.chapterID = e.chapterID
-			this.preLoad()
-			this.delayLoad()
+			this.init(+e.chapterID)
+		},
+		created() {
+			let height = unit.getSystemHeight({isRpx:true}) - unit.Torpx(this.statusBarHeight) 
+			this.calHeight = Math.floor(height)
+			this.getBrightNess()
 		},
 		mounted() {
-			unit.calSurplusHeight({
-				pageID: this,
-				pos: 'cal',
-				success: val => this.calHeight = val
-			})
-			this.getBrightNess()
+			// unit.calSurplusHeight({
+			// 	pageID: this,
+			// 	pos: 'cal',
+			// 	success: val => this.calHeight = val
+			// })
 		},
 		methods: {
 			htmlParser,
+			init(id) {
+				this.preLoad()
+				this.toPointChapter(id)
+			},
 			changeSetStatus() {
 				if ((this.typeFaceStatus || this.moreStatus) && !this.setStatus) {
 					this.changeTypeFaceStatus(false) 
@@ -222,9 +228,15 @@
 			},
 			themeIndexChange(id) {
 				this.themeIndex = this.themes.findIndex(item => item.id === id)
+				uni.setStorageSync("THEMEINDEX", this.themeIndex)
 			},
 			isnight() {
 				this.themeIndex !== 4 ? this.themeIndexChange('nightTheme') : this.themeIndexChange('morningTheme') 
+			},
+			quit() {
+				uni.navigateBack({
+					delta:1
+				})
 			}
 		}
 	}
