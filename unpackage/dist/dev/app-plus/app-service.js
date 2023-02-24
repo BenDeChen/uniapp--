@@ -3041,12 +3041,62 @@ if (uni.restoreGlobal) {
   const PagesSortSort = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$b], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/sort/sort.vue"]]);
   const _sfc_main$b = {
     data() {
-      return {};
+      return {
+        statusBarHeight: this.$statusBarHeight
+      };
     },
     methods: {}
   };
   function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
-    return vue.openBlock(), vue.createElementBlock("view");
+    const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
+    return vue.openBlock(), vue.createElementBlock("view", null, [
+      vue.createElementVNode("view", {
+        class: "",
+        style: vue.normalizeStyle({ height: $data.statusBarHeight + "px" })
+      }, null, 4),
+      vue.createElementVNode("view", {
+        class: "flex justify-between align-center px-2",
+        style: { "height": "200rpx" }
+      }, [
+        vue.createElementVNode("view", { class: "flex align-center" }, [
+          vue.createElementVNode("image", {
+            src: "/static/logo.png",
+            mode: "aspectFill",
+            style: { "border-radius": "50%", "width": "130rpx", "height": "130rpx" }
+          }),
+          vue.createElementVNode("text", { class: "pl-2" }, "\u8428\u8FBE")
+        ]),
+        vue.createElementVNode("view", {
+          class: "flex align-center rounded-circle p-1",
+          style: { "background-color": "#ecf0f3" }
+        }, [
+          vue.createVNode(_component_myIcon, {
+            type: "icon-erji",
+            size: "30",
+            class: "px-1"
+          }),
+          vue.createElementVNode("text", null, "\u6211\u7684\u5BA2\u670D")
+        ])
+      ]),
+      (vue.openBlock(), vue.createElementBlock(vue.Fragment, null, vue.renderList(["\u7B7E\u5230", "\u8BBE\u7F6E", "\u610F\u89C1\u53CD\u9988", "\u5207\u6362\u8D26\u53F7"], (item) => {
+        return vue.createElementVNode("view", { key: item }, [
+          vue.createElementVNode("view", {
+            class: "flex align-center justify-between px-2 text-light-black px-2",
+            style: { "height": "90rpx" }
+          }, [
+            vue.createElementVNode("text", null, vue.toDisplayString(item), 1),
+            vue.createVNode(_component_myIcon, {
+              type: "icon-iconfonti",
+              class: "px-1"
+            })
+          ]),
+          vue.createElementVNode("view", {
+            class: "",
+            style: { "background-color": "#f8f8f8", "height": "12rpx" }
+          })
+        ]);
+      }), 64))
+    ]);
   }
   const PagesMineMine = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$a], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/mine/mine.vue"]]);
   const _sfc_main$a = {
