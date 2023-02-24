@@ -15,6 +15,7 @@
 			<booklist :bookList="item.books"></booklist>
 		</block>
 		<myaudio></myaudio>
+		<view class="" style="height: 160rpx;"></view>
 	</view>
 </template>
 

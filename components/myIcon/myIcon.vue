@@ -21,7 +21,7 @@
 				default: ''
 			},
 			size: {
-				type: Number || String,
+				type: [Number, String],
 				default: 45
 			}
 		},

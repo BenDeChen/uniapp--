@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "search": "../../components/search/search",
+    "tab-top": "../../components/tabTop/tabTop",
+    "collections": "../../components/collections/collections",
+    "my-icon": "../../components/myIcon/myIcon",
+    "uni-popup": "../../uni_modules/uni-popup/components/uni-popup/uni-popup"
+  }
+}

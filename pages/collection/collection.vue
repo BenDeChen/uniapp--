@@ -1,21 +1,20 @@
 <template>
-	<view>
+	<view style="height: 100%;overflow: hidden;">
 		<view class="cal" :style="{height:statusBarHeight+'px'}"></view>
 		<search class="cal"></search>
 		<tabTop class="cal" :tabArr="['我的收藏','收听历史']" @getTabIndex="getTabIndex" :tabIndex="tabIndex"></tabTop>
-		<swiper :style="{height: calHeight+'rpx'}" :current="tabIndex" @change="swiperChangeIndex">
+		<swiper  :style="{height: calHeight + 'rpx'}" :current="tabIndex" @change="swiperChangeIndex">
 			<swiper-item>
-				<scroll-view scroll-y :style="{height: calHeight+'rpx'}">
+				<scroll-view scroll-y style="height: 100%">
 					<block v-for="item in collectedArr" :key="item.id">
 						<collections :bookID="item.id" :bookImgUrl="item.imgurl" :bookName="item.name"
 							:bookSynopsis="item.synopsis" @getID="getID" @showCancelCol="showCancelCol">
 						</collections>
 					</block>
-					
 				</scroll-view>
 			</swiper-item>
 			<swiper-item>
-				<scroll-view scroll-y>
+				<scroll-view scroll-y style="height: 100%">
 					<view></view>
 				</scroll-view>
 			</swiper-item>
@@ -46,11 +45,12 @@
 				collectedArr: [],
 				cancelColID:0
 			}
-		}, 
+		},  
 		mounted() {
 			$u.calSurplusHeight(({
 				pageId: this,
 				pos: 'cal',
+				isTabBarPage: true,
 				success: val => this.calHeight = val
 			}))
 			this.initData()
@@ -88,6 +88,7 @@
 				this.showCancalColStatus = e.show
 			},
 			initData() {
+				console.log(books);
 				this.collectedArr.push(...books)
 			},
 			IDToIndex(id) {

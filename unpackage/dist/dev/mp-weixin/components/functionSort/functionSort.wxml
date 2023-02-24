@@ -1,0 +1,1 @@
+<view class="flex align-center justify-between mx-3 py-2"><block wx:for="{{a}}" wx:for-item="item" wx:key="e"><view class="flex flex-column align-center" bindtap="{{item.d}}"><my-icon wx:if="{{item.b}}" u-i="{{item.a}}" bind:__l="__l" u-p="{{item.b}}"></my-icon><text class="mt-1 font text-light-black">{{item.c}}</text></view></block></view>

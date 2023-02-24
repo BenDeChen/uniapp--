@@ -140,6 +140,13 @@ export default {
 				commit("setPlaydDuration")
 				commit("changeCurrentTime", audio.currentTime)
 			})
+			// 音频进入可以播放状态
+			audio.onCanplay(()=>{
+				// #ifdef MP-WEIXIN
+				commit("setPlaydDuration")
+				commit("changeCurrentTime", audio.currentTime)
+				// #endif
+			})
 		},
 		// 暂停播放
 		playOrPause({

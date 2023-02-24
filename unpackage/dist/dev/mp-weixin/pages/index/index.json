@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "search": "../../components/search/search",
+    "banner": "../../components/banner/banner",
+    "function-sort": "../../components/functionSort/functionSort",
+    "list-header": "../../components/listHeader/listHeader",
+    "recommond": "../../components/recommond/recommond",
+    "booklist": "../../components/booklist/booklist",
+    "myaudio": "../../components/myaudio/myaudio"
+  }
+}

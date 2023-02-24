@@ -54,10 +54,13 @@
 		</view>
 		<!-- 更多 -->
 		<view :class="curTheme" v-if="moreStatus" class="fixed-bottom bg-white shadow px-3 pt-2 animated" style="height: 250rpx;">
+			<!-- #ifndef H5 -->
 			<view class="flex">亮度: <slider class="flex-1" :value="brightNess" min="0" max="100" block-size="16"
 					activeColor="#34495e" backgroundColor="#ecf1f0" @change="setBrightNess" @changing="setBrightNess">
 				</slider>
 			</view>
+			<!-- #endif -->
+			
 			<view class="flex font text-light-black justify-between">
 				<block v-for="item in themes" :key="item.id">
 					<view class="flex-1" @tap="themeIndexChange(item.id)">
@@ -99,8 +102,8 @@
 				setStatus: false,
 				chapterIndex: 0,
 				LoadedChapterd: [],
-				myFontSize: uni.getStorageSync('myFontSize') | 20,
-				myLineHeight: uni.getStorageSync('myLineHeight') | 45,
+				myFontSize: uni.getStorageSync('myFontSize') || 20,
+				myLineHeight: uni.getStorageSync('myLineHeight') || 45,
 				typeFaceStatus: false,
 				moreStatus:false,
 				brightNess:0,//亮度
@@ -139,7 +142,9 @@
 		created() {
 			let height = unit.getSystemHeight({isRpx:true}) - unit.Torpx(this.statusBarHeight) 
 			this.calHeight = Math.floor(height)
+			// #ifndef H5
 			this.getBrightNess()
+			// #endif
 		},
 		mounted() {
 			// unit.calSurplusHeight({

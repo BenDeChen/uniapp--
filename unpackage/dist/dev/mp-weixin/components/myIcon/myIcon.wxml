@@ -1,0 +1,1 @@
+<view><text class="{{['iconfont', a, b]}}" style="{{'font-size:' + c}}"></text></view>

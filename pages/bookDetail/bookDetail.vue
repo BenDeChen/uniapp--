@@ -17,7 +17,7 @@
 			<swiper :style="{height: calHeight + 'rpx',}" :current="tabIndex" @change="swiperCurrentChange">
 				<swiper-item >
 					<!-- 详情 -->
-					<scroll-view scroll-y class="animated">
+					<scroll-view scroll-y class="animated" style="height: 100%">
 						<view>
 							<view class="py-2 flex justify-center text-light-black">--简介--</view>
 							<view class="px-2 font-lg " style="line-height: 80rpx;">{{synopsis}}</view>
@@ -26,7 +26,7 @@
 				</swiper-item>
 				<swiper-item>
 					<!-- 目录 -->
-					<scroll-view scroll-y style="height: 1120rpx;">
+					<scroll-view scroll-y style="height: 100%">
 						<block v-for="(item,index) in chapterCatalog" :key="item.id">
 							<view class="p-2 text-ellipsis border-bottom" hover-class="bg-light"
 								@tap="toReading(item.id)">

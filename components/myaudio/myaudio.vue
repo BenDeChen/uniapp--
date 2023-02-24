@@ -48,7 +48,7 @@
 		},
 		created() {
 			// #ifdef H5
-			this.bottom = 100
+			this.bottom = uni.getSystemInfoSync().windowBottom * 2
 			// #endif
 		},
 		mounted() {

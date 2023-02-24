@@ -54,7 +54,7 @@ if (uni.restoreGlobal) {
         default: ""
       },
       size: {
-        type: Number || String,
+        type: [Number, String],
         default: 45
       }
     },
@@ -1756,7 +1756,11 @@ if (uni.restoreGlobal) {
           }, null, 8, ["bookList"])
         ], 64);
       }), 128)),
-      vue.createVNode(_component_myaudio)
+      vue.createVNode(_component_myaudio),
+      vue.createElementVNode("view", {
+        class: "",
+        style: { "height": "160rpx" }
+      })
     ], 4);
   }
   const PagesIndexIndex = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$h], ["__file", "E:/code/uni-app/items/xiaoshuo/pages/index/index.vue"]]);
@@ -2723,6 +2727,7 @@ if (uni.restoreGlobal) {
       unit.calSurplusHeight({
         pageId: this,
         pos: "cal",
+        isTabBarPage: true,
         success: (val) => this.calHeight = val
       });
       this.initData();
@@ -2760,6 +2765,7 @@ if (uni.restoreGlobal) {
         this.showCancalColStatus = e.show;
       },
       initData() {
+        formatAppLog("log", "at pages/collection/collection.vue:91", books);
         this.collectedArr.push(...books);
       },
       IDToIndex(id) {
@@ -2778,7 +2784,7 @@ if (uni.restoreGlobal) {
     const _component_collections = resolveEasycom(vue.resolveDynamicComponent("collections"), __easycom_2$2);
     const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
     const _component_uni_popup = resolveEasycom(vue.resolveDynamicComponent("uni-popup"), __easycom_2$1);
-    return vue.openBlock(), vue.createElementBlock("view", null, [
+    return vue.openBlock(), vue.createElementBlock("view", { style: { "height": "100%", "overflow": "hidden" } }, [
       vue.createElementVNode("view", {
         class: "cal",
         style: vue.normalizeStyle({ height: $data.statusBarHeight + "px" })
@@ -2798,7 +2804,7 @@ if (uni.restoreGlobal) {
         vue.createElementVNode("swiper-item", null, [
           vue.createElementVNode("scroll-view", {
             "scroll-y": "",
-            style: vue.normalizeStyle({ height: $data.calHeight + "rpx" })
+            style: { "height": "100%" }
           }, [
             (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($data.collectedArr, (item) => {
               return vue.openBlock(), vue.createBlock(_component_collections, {
@@ -2811,10 +2817,13 @@ if (uni.restoreGlobal) {
                 onShowCancelCol: $options.showCancelCol
               }, null, 8, ["bookID", "bookImgUrl", "bookName", "bookSynopsis", "onGetID", "onShowCancelCol"]);
             }), 128))
-          ], 4)
+          ])
         ]),
         vue.createElementVNode("swiper-item", null, [
-          vue.createElementVNode("scroll-view", { "scroll-y": "" }, [
+          vue.createElementVNode("scroll-view", {
+            "scroll-y": "",
+            style: { "height": "100%" }
+          }, [
             vue.createElementVNode("view")
           ])
         ])
@@ -2946,7 +2955,6 @@ if (uni.restoreGlobal) {
       unit.calSurplusHeight({
         pageID: this,
         pos: "cal",
-        isTabBarPage: true,
         success: (val) => this.calHeight = val
       });
     },
@@ -3775,6 +3783,11 @@ if (uni.restoreGlobal) {
       },
       showSingerDetail() {
         this.$refs.pop.open();
+      },
+      clickWindow() {
+        if (this.listState) {
+          this.changeStatus("listState");
+        }
       }
     }
   };
@@ -3783,8 +3796,9 @@ if (uni.restoreGlobal) {
     const _component_myIcon = resolveEasycom(vue.resolveDynamicComponent("myIcon"), __easycom_0$3);
     const _component_uni_popup = resolveEasycom(vue.resolveDynamicComponent("uni-popup"), __easycom_2$1);
     return vue.openBlock(), vue.createElementBlock("view", {
-      class: vue.normalizeClass(["main", $data.nightStatus ? "night-theme" : ""]),
-      style: { "height": "100vh" }
+      class: vue.normalizeClass(["main", $data.nightStatus ? "night-theme" : "bg-white"]),
+      style: { "height": "100vh" },
+      onClick: _cache[9] || (_cache[9] = (...args) => $options.clickWindow && $options.clickWindow(...args))
     }, [
       vue.createVNode(_component_pageTitle, {
         theme: $data.nightStatus ? "night-theme" : "bg-white"
@@ -3809,15 +3823,15 @@ if (uni.restoreGlobal) {
         style: { "height": "420rpx" }
       }, [
         vue.createElementVNode("image", {
-          style: { "border-radius": "35rpx", "box-shadow": "0 2rpx 6rpx 0" },
+          style: { "border-radius": "35rpx", "box-shadow": "0 2rpx 6rpx 0", "width": "380rpx", "height": "380rpx" },
           src: "/static/music/music1.png",
-          mode: "widthFix",
+          mode: "aspectFill",
           "lazy-load": ""
         })
       ]),
       vue.createElementVNode("view", {
         class: "flex align-center justify-center font",
-        style: { "color": "#7a8388", "height": "65rpx", "padding-top": "40rpx" }
+        style: { "color": "#7a8388", "height": "65rpx", "padding-top": "50rpx" }
       }, [
         vue.createElementVNode("view", { class: "" }, vue.toDisplayString($options.formatTime(_ctx.currentTime)), 1),
         vue.createElementVNode("view", {
@@ -3841,7 +3855,7 @@ if (uni.restoreGlobal) {
       ]),
       vue.createElementVNode("view", {
         class: "flex align-center justify-center",
-        style: { "padding-top": "60rpx" }
+        style: { "padding-top": "50rpx" }
       }, [
         vue.createElementVNode("view", {
           class: "animated mr-3",
@@ -3872,12 +3886,12 @@ if (uni.restoreGlobal) {
       ]),
       vue.createElementVNode("view", {
         class: "flex align-center justify-center font",
-        style: { "padding-top": "60rpx" }
+        style: { "padding-top": "50rpx" }
       }, [
         vue.createElementVNode("view", {
-          class: "animated text-center",
+          class: "animated text-center px-2",
           "hover-class": "pulse",
-          onClick: _cache[5] || (_cache[5] = ($event) => $options.changeStatus("listState"))
+          onClick: _cache[5] || (_cache[5] = vue.withModifiers(($event) => $options.changeStatus("listState"), ["stop"]))
         }, [
           vue.createVNode(_component_myIcon, {
             type: !$data.listState ? "icon-icon--" : "icon-liebiao",
@@ -3886,64 +3900,49 @@ if (uni.restoreGlobal) {
           vue.createElementVNode("text", { class: "pt-2" }, "\u64AD\u653E\u5217\u8868")
         ]),
         vue.createElementVNode("view", {
-          class: "animated text-center",
+          class: "animated text-center px-2",
           "hover-class": "pulse",
-          onClick: _cache[6] || (_cache[6] = ($event) => $options.changeStatus("collectState"))
+          onClick: _cache[6] || (_cache[6] = vue.withModifiers(($event) => $options.changeStatus("collectState"), ["stop"]))
         }, [
           vue.createVNode(_component_myIcon, {
             type: !$data.collectState ? "icon-aixinfengxian" : "icon-xihuan2",
-            style: { "padding": "0 80rpx" },
             size: "60"
           }, null, 8, ["type"]),
           vue.createElementVNode("text", { class: "pt-2" }, "\u6536\u85CF")
         ]),
         vue.createElementVNode("view", {
-          class: "animated text-center",
+          class: "animated text-center px-2",
           "hover-class": "pulse",
-          onClick: _cache[7] || (_cache[7] = ($event) => $options.changeStatus("nightStatus"))
+          onClick: _cache[7] || (_cache[7] = vue.withModifiers(($event) => $options.changeStatus("nightStatus"), ["stop"]))
         }, [
           vue.createVNode(_component_myIcon, {
             type: !$data.nightStatus ? "icon-yejianmoshi" : "icon-yueliang",
             size: "60"
           }, null, 8, ["type"]),
           vue.createElementVNode("text", { class: "pt-2" }, "\u591C\u95F4\u6A21\u5F0F")
-        ])
-      ]),
-      !$data.listState ? (vue.openBlock(), vue.createElementBlock("view", {
-        key: 0,
-        class: "fixed-bottom shadow p-2 animated fadeInUp",
-        style: { "height": "260rpx", "border-radius": "30rpx", "z-index": "0" }
-      }, [
-        vue.createElementVNode("view", { class: "flex justify-between" }, [
-          vue.createElementVNode("view", null, [
-            vue.createElementVNode("view", null, [
-              vue.createElementVNode("text", { class: "font" }, "\u6B4C\u66F2:"),
-              vue.createElementVNode("text", { class: "font-weight-bold" }, vue.toDisplayString(_ctx.audioName), 1)
-            ]),
-            vue.createElementVNode("view", null, [
-              vue.createElementVNode("text", { class: "font" }, "\u6B4C\u624B:"),
-              vue.createElementVNode("text", { class: "font-weight-bold" }, vue.toDisplayString(_ctx.singerName), 1)
-            ])
-          ]),
+        ]),
+        vue.createElementVNode("view", {
+          class: "animated text-center px-2",
+          "hover-class": "pulse",
+          onClick: _cache[8] || (_cache[8] = vue.withModifiers((...args) => $options.showSingerDetail && $options.showSingerDetail(...args), ["stop"]))
+        }, [
           vue.createVNode(_component_myIcon, {
             type: "icon-jieshao",
-            size: "65",
-            onClick: $options.showSingerDetail
-          }, null, 8, ["onClick"])
-        ]),
-        vue.createElementVNode("view", { class: "" }, [
-          vue.createElementVNode("view", { class: "font-md pt-2" }, "\u6B4C\u624B\u7B80\u4ECB:"),
-          vue.createElementVNode("view", { class: "text-ellipsis w-100" }, vue.toDisplayString(_ctx.singerSynopsis), 1)
+            size: "60"
+          }),
+          vue.createElementVNode("text", { class: "pt-2" }, "\u6B4C\u624B\u7B80\u4ECB")
         ])
-      ])) : (vue.openBlock(), vue.createElementBlock("view", {
+      ]),
+      vue.createCommentVNode("v-if", true),
+      $data.listState ? (vue.openBlock(), vue.createElementBlock("view", {
         key: 1,
-        class: "fixed-bottom shadow p-2 animated fadeInUp",
+        class: vue.normalizeClass([$data.nightStatus ? "night-theme" : "bg-white", "fixed-bottom shadow p-2 animated fadeInUp"]),
         style: { "height": "400rpx", "border-radius": "30rpx" }
       }, [
         vue.createElementVNode("view", {
           class: "font-weight-bold font-md",
           style: { "height": "50rpx" }
-        }, "\u5217\u8868\u9009\u62E9"),
+        }, "\u5217\u8868\u9009\u62E9 "),
         vue.createElementVNode("scroll-view", {
           "scroll-y": "",
           style: { "height": "350rpx" }
@@ -3954,7 +3953,7 @@ if (uni.restoreGlobal) {
               class: "flex align-center justify-between font p-2",
               style: {},
               "hover-class": "bg-light",
-              onClick: ($event) => _ctx.selectPlay(item.id)
+              onClick: vue.withModifiers(($event) => _ctx.selectPlay(item.id), ["stop"])
             }, [
               vue.createElementVNode("text", { class: "flex-1 text-ellipsis" }, vue.toDisplayString(item.audioName), 1),
               vue.createElementVNode("text", { class: "flex-1 text-ellipsis" }, vue.toDisplayString(item.singerName), 1),
@@ -3968,7 +3967,7 @@ if (uni.restoreGlobal) {
             ], 8, ["onClick"]);
           }), 128))
         ])
-      ])),
+      ], 2)) : vue.createCommentVNode("v-if", true),
       vue.createVNode(_component_uni_popup, { ref: "pop" }, {
         default: vue.withCtx(() => [
           vue.createElementVNode("view", {
@@ -6447,7 +6446,8 @@ if (uni.restoreGlobal) {
             vue.createCommentVNode(" \u8BE6\u60C5 "),
             vue.createElementVNode("scroll-view", {
               "scroll-y": "",
-              class: "animated"
+              class: "animated",
+              style: { "height": "100%" }
             }, [
               vue.createElementVNode("view", null, [
                 vue.createElementVNode("view", { class: "py-2 flex justify-center text-light-black" }, "--\u7B80\u4ECB--"),
@@ -6462,7 +6462,7 @@ if (uni.restoreGlobal) {
             vue.createCommentVNode(" \u76EE\u5F55 "),
             vue.createElementVNode("scroll-view", {
               "scroll-y": "",
-              style: { "height": "1120rpx" }
+              style: { "height": "100%" }
             }, [
               (vue.openBlock(true), vue.createElementBlock(vue.Fragment, null, vue.renderList($data.chapterCatalog, (item, index) => {
                 return vue.openBlock(), vue.createElementBlock("view", {
@@ -6778,8 +6778,8 @@ if (uni.restoreGlobal) {
         setStatus: false,
         chapterIndex: 0,
         LoadedChapterd: [],
-        myFontSize: uni.getStorageSync("myFontSize") | 20,
-        myLineHeight: uni.getStorageSync("myLineHeight") | 45,
+        myFontSize: uni.getStorageSync("myFontSize") || 20,
+        myLineHeight: uni.getStorageSync("myLineHeight") || 45,
         typeFaceStatus: false,
         moreStatus: false,
         brightNess: 0,
@@ -6863,7 +6863,7 @@ if (uni.restoreGlobal) {
         this.changeIndex(e.detail.current);
       },
       changeCatelogStatus(bol) {
-        formatAppLog("log", "at pages/reading/reading.vue:188", bol);
+        formatAppLog("log", "at pages/reading/reading.vue:193", bol);
         if (bol) {
           this.$refs.drawer.open();
           this.changeSetStatus();
@@ -7336,6 +7336,8 @@ if (uni.restoreGlobal) {
           commit("setPlaydDuration");
           commit("changeCurrentTime", audio.currentTime);
         });
+        audio.onCanplay(() => {
+        });
       },
       playOrPause({
         commit,
@@ -7400,7 +7402,8 @@ if (uni.restoreGlobal) {
   function createApp() {
     const app = vue.createVueApp(App);
     app.use(store);
-    app.config.globalProperties.$statusBarHeight = uni.getSystemInfoSync().statusBarHeight;
+    let height = uni.getSystemInfoSync().statusBarHeight;
+    app.config.globalProperties.$statusBarHeight = height;
     return {
       app
     };

@@ -1,5 +1,5 @@
 <template>
-	<view class="main" style="height: 100vh;" :class="nightStatus ? 'night-theme' : ''">
+	<view class="main" style="height: 100vh;" :class="nightStatus ? 'night-theme' : 'bg-white'" @tap="clickWindow">
 		<pageTitle :theme="nightStatus ? 'night-theme':'bg-white'">音乐详情</pageTitle>
 		<view class="flex align-center justify-center flex-column py-4">
 			<view>
@@ -12,16 +12,16 @@
 			</view>
 		</view>
 		<view class="flex align-center justify-center" style="height: 420rpx;">
-			<image style="border-radius: 35rpx;box-shadow: 0 2rpx 6rpx 0" src="../../static/music/music1.png" mode="widthFix" lazy-load=""></image>
+			<image style="border-radius: 35rpx;box-shadow: 0 2rpx 6rpx 0; width: 380rpx; height: 380rpx;" src="../../static/music/music1.png" mode="aspectFill" lazy-load=""></image>
 		</view>
-		<view class="flex align-center justify-center font" style="color:#7a8388;height: 65rpx;padding-top: 40rpx;">
+		<view class="flex align-center justify-center font" style="color:#7a8388;height: 65rpx;padding-top: 50rpx;">
 			<view class="">{{formatTime(currentTime)}}</view>
 			<view class="" style="width: 500rpx;" @tap.stop>
 				<slider :value="currentTime" :max="duration || 100" :disabled="!duration" @change="sliderToPlay" @changing="sliderToPlay" block-size="16" activeColor="#e48267" backgroundColor="#eef2f3"/>
 			</view>
 			<view class="">{{formatTime(duration)}}</view>
 		</view>
-		<view class="flex align-center justify-center" style="padding-top: 60rpx;">
+		<view class="flex align-center justify-center" style="padding-top: 50rpx;">
 			<view class="animated mr-3" hover-class="pulse">
 				<myIcon type="icon-shangyixiang"  size="85" @tap.stop="PreOrNext('pre')"></myIcon>
 			</view>
@@ -30,21 +30,25 @@
 				<myIcon type="icon-xiayixiang" size="85" @tap.stop="PreOrNext('next')"></myIcon>
 			</view>
 		</view>
-		<view class="flex align-center justify-center font"  style="padding-top: 60rpx;">
-			<view class="animated text-center" hover-class="pulse" @tap="changeStatus('listState')">
+		<view class="flex align-center justify-center font"  style="padding-top: 50rpx;">
+			<view class="animated text-center px-2" hover-class="pulse" @tap.stop="changeStatus('listState')">
 				<myIcon :type="!listState ? 'icon-icon--' : 'icon-liebiao'"  size="60"></myIcon>
 				<text class="pt-2">播放列表</text>
 			</view>
-			<view class="animated text-center" hover-class="pulse" @tap="changeStatus('collectState')">
-				<myIcon :type="!collectState ? 'icon-aixinfengxian' : 'icon-xihuan2'" style="padding:0 80rpx" size="60"></myIcon>
+			<view class="animated text-center px-2" hover-class="pulse" @tap.stop="changeStatus('collectState')">
+				<myIcon :type="!collectState ? 'icon-aixinfengxian' : 'icon-xihuan2'" size="60"></myIcon>
 				<text class="pt-2">收藏</text>
 			</view>
-			<view class="animated text-center" hover-class="pulse" @tap="changeStatus('nightStatus')">
+			<view class="animated text-center px-2" hover-class="pulse" @tap.stop="changeStatus('nightStatus')">
 				<myIcon :type="!nightStatus ? 'icon-yejianmoshi' : 'icon-yueliang'" size="60"></myIcon>
 				<text class="pt-2">夜间模式</text>
 			</view>
+			<view class="animated text-center px-2" hover-class="pulse" @tap.stop="showSingerDetail">
+				<myIcon type="icon-jieshao" size="60"></myIcon>
+				<text class="pt-2">歌手简介</text>
+			</view>
 		</view>
-		<view class="fixed-bottom shadow p-2 animated fadeInUp" style="height: 260rpx;border-radius: 30rpx;z-index: 0;" v-if="!listState">
+		<view v-if="false" :class="nightStatus ? 'night-theme' : 'bg-white'" class="fixed-bottom shadow p-2 animated fadeInUp" style="height: 260rpx;border-radius: 30rpx;z-index: 0;" >
 			<view class="flex justify-between">
 				<view>
 					<view>
@@ -65,11 +69,11 @@
 				</view>
 			</view>
 		</view>
-		<view class="fixed-bottom shadow p-2 animated fadeInUp" style="height: 400rpx;border-radius: 30rpx;" v-else>
-			 <view class="font-weight-bold font-md " style="height: 50rpx;">列表选择</view>
+		<view v-if="listState" :class="nightStatus ? 'night-theme' : 'bg-white'" class="fixed-bottom shadow p-2 animated fadeInUp" style="height: 400rpx;border-radius: 30rpx;">
+			 <view class="font-weight-bold font-md " style="height: 50rpx;">列表选择 </view>
 			 <scroll-view scroll-y style="height: 350rpx;">
 				 <block v-for="(item,index) in audioList" :key="item.id">
-					 <view class="flex align-center justify-between font p-2" style="85rpx" hover-class="bg-light"  @tap="selectPlay(item.id)">
+					 <view class="flex align-center justify-between font p-2" style="85rpx" hover-class="bg-light"  @tap.stop="selectPlay(item.id)">
 						 <text class="flex-1 text-ellipsis">{{item.audioName}}</text>
 						 <text class="flex-1 text-ellipsis">{{item.singerName}}</text>
 						 <view class="flex-1 flex ml-3 align-center">
@@ -123,6 +127,11 @@
 			},
 			showSingerDetail() {
 				this.$refs.pop.open()
+			},
+			clickWindow() {
+				if(this.listState) {
+					this.changeStatus('listState')
+				}
 			}
 		}
 	}

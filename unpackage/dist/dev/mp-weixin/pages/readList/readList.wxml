@@ -1,0 +1,1 @@
+<view><page-title u-s="{{['d']}}" u-i="9997f89a-0" bind:__l="__l">榜单</page-title><booklist wx:if="{{a}}" u-i="9997f89a-1" bind:__l="__l" u-p="{{a}}"></booklist><uni-load-more wx:if="{{b}}" u-i="9997f89a-2" bind:__l="__l" u-p="{{b}}"></uni-load-more></view>

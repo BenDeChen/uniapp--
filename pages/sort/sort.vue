@@ -55,7 +55,7 @@
 			$u.calSurplusHeight({
 				pageID: this,
 				pos: 'cal',
-				isTabBarPage: true,
+				// isTabBarPage: false,
 				success: val => this.calHeight = val
 			})
 		},

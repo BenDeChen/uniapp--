@@ -1,0 +1,1 @@
+<view><view class="flex align-center justify-center mx-2 border rounded bg-light" style="height:60rpx,opacity: .8"><my-icon wx:if="{{a}}" class="p-1" u-i="766deb92-0" bind:__l="__l" u-p="{{a}}"></my-icon><input type="text" placeholder="搜索你想听的节目" class="flex-1"></input></view></view>
