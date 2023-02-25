@@ -2,6 +2,6 @@
 
 uniapp + vue3
 
-<img src="https://github.com/BenDeChen/uniapp--Audio-novel-app/blob/master/img/Snipaste_2023-02-20_11-50-22.png"/>
+<img src=./img/Snipaste_2023-02-20_11-50-22.png"/>
 
 > 半成品，以后有时间在完善，基本是静态页面
