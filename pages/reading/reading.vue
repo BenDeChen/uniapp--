@@ -31,15 +31,18 @@
 		</view>
 
 		<!-- 目录· -->
-		<uni-drawer ref="drawer" :class="curTheme" >
-			<view class="" :style="{height: statusBarHeight + 'px'}"></view>
-			<view class="flex align-center justify-center" style="80rpx">章节目录</view>
-			<scroll-view scroll-y :style="{height: calHeight - 80 + 'rpx'}">
-				<block v-for="(item,index) in chapterCatalog" :key="item.id">
-					<view class="px-1 py-2 font text-ellipsis" :class="{curChapter: chapterIndex == index}"
-						@tap="toPointChapter(item.id)">{{item.title}}</view>
-				</block>
-			</scroll-view>
+		<uni-drawer ref="drawer">
+			<view :class="curTheme" >
+				<view class="" :style="{height: statusBarHeight + 'px'}"></view>
+				<view class="flex align-center justify-center" style="80rpx">章节目录</view>
+				<scroll-view scroll-y :style="{height: calHeight + 'rpx'}">
+					<block v-for="(item,index) in chapterCatalog" :key="item.id">
+						<view class="px-1 py-2 font text-ellipsis" :class="{curChapter: chapterIndex == index}"
+							@tap="toPointChapter(item.id)">{{item.title}}</view>
+					</block>
+				</scroll-view>
+			</view>
+			
 		</uni-drawer>
 		<!-- 字体 -->
 		<view  :class="curTheme"  v-if="typeFaceStatus" class="fixed-bottom bg-white shadow px-3 pt-2 animated" style="height: 180rpx;">
@@ -86,19 +89,18 @@
 </template>
 
 <script>
-	import test from "../../static/test.js"
+	// import test from "../../static/test.js"
 	import unit from "../../static/unit.js"
 	import htmlParser from "../../static/html-parser.js"
+	let testContent,testSynopsis;
 	export default {
 		data() {
 			return {
 				statusBarHeight: this.$statusBarHeight,
 				chapterID: 0,
-				novalName: test.name,
-				chapterCatalog: test.chapterCatalog,
-				calHeight: 0,
-				// textChapter: htmlParser(test.content[0].text),
-				// testChapters: test.content,
+				novalName: "",
+				chapterCatalog: [],
+				calHeight: 0, 
 				setStatus: false,
 				chapterIndex: 0,
 				LoadedChapterd: [],
@@ -155,9 +157,14 @@
 		},
 		methods: {
 			htmlParser,
-			init(id) {
+			async init(id) {
+				testContent = await this.$http.get("/testContent")
+				testSynopsis = await this.$http.get("/testSynopsis")
+				this.chapterCatalog = testSynopsis.chapterCatalog
+				this.novalName = testSynopsis.name
 				this.preLoad()
 				this.toPointChapter(id)
+				this.delayLoad()
 			},
 			changeSetStatus() {
 				if ((this.typeFaceStatus || this.moreStatus) && !this.setStatus) {
@@ -168,17 +175,18 @@
 				this.setStatus = !this.setStatus
 			},
 			preLoad() {
-				test.chapterCatalog.forEach(item => this.LoadedChapterd.push({
+				testSynopsis.chapterCatalog.forEach(item => this.LoadedChapterd.push({
 					id: item.id,
 					title: item.title,
 					text: ''
 				}))
+				console.log(this.LoadedChapterd);
 			},
 			delayLoad() {
 				let index = this.chapterIndex
 				if (!this.LoadedChapterd[index].text) {
 					setTimeout(() => {
-						this.LoadedChapterd[index].text = test.content[index].text
+						this.LoadedChapterd[index].text = testContent.content[index].text
 					}, 1000)
 				}
 			},

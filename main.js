@@ -1,5 +1,6 @@
 import App from './App'
 import store from "./store/index.js"
+import request from "./static/request.js"
 // #ifndef VUE3
 import Vue from 'vue'
 Vue.config.productionTip = false
@@ -23,6 +24,7 @@ export function createApp() {
 	height = uni.getMenuButtonBoundingClientRect().bottom
 	// #endif
 	app.config.globalProperties.$statusBarHeight = height
+	app.config.globalProperties.$http = request
 	return {
 		app
 	}

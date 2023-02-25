@@ -1,13 +1,13 @@
-import musicResourecs from "./musicResourecs.js"
-let music = musicResourecs.musicResourecs
-
+// import musicResourecs from "./musicResourecs.js"
+import http from "../../static/request.js"
+let music;
 let audio;
 let timeOut = null;
 export default {
 	namespaced: true,
 	state: {
 		playStatus: false, //播放暂停
-		currentPlayIndex: 0, //当前歌曲标识
+		currentPlayIndex: 1, //当前歌曲标识
 		duration: 0, //歌曲长度
 		currentTime: 0, //当前播放长度
 		audioList: []
@@ -16,18 +16,21 @@ export default {
 		// 获取当前音乐名称
 		audioName(state) {
 			let i = state.currentPlayIndex
-			return music[i].name
+			return music ? music[i].name : ""
 		},
 		// 获取歌手
 		singerName(state) {
 			let i = state.currentPlayIndex
-			return music[i].singer.name
+			return music ? music[i].singer.name : ""
 		},
 		singerSynopsis(state) {
 			let i = state.currentPlayIndex
-			return music[i].singer.synopsis
+			return music ? music[i].singer.synopsis : ""
+		},
+		coverImg(state) {
+			let i = state.currentPlayIndex
+			return music ? music[i].cover : ""
 		}
-		
 	},
 	mutations: { 
 		destroyed() {
@@ -58,15 +61,20 @@ export default {
 		// 开始播放
 		audioPlay(state) {
 			let index = state.currentPlayIndex;
+			state.audioList[index].playStatus = 1
 			audio.src = music[index].src;
 			audio.play();
 		},
 		// 暂停
 		audioPause(state) {
+			let index = state.currentPlayIndex;
+			state.audioList[index].playStatus = -1
 			audio.pause();
 		},
 		// 停止
-		audioStop() {
+		audioStop(state) {
+			let index = state.currentPlayIndex;
+			state.audioList[index].playStatus = 0
 			audio.stop()
 		},
 		// 改变播放标识 修改歌曲下标
@@ -103,11 +111,14 @@ export default {
 		}
 	},
 	actions: {
-		init({
+		async init({
 			commit,
 			dispatch
 		}) {
+			let res = await http.get("/musicResourecs");
+			music = res.musicResourecs
 			if (audio) return;
+			commit("changePlayIndex", 0)
 			audio = uni.createInnerAudioContext()
 			commit("getAudioList", music)
 			// 音频播放事件

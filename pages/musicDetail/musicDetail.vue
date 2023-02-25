@@ -12,7 +12,7 @@
 			</view>
 		</view>
 		<view class="flex align-center justify-center" style="height: 420rpx;">
-			<image style="border-radius: 35rpx;box-shadow: 0 2rpx 6rpx 0; width: 380rpx; height: 380rpx;" src="../../static/music/music1.png" mode="aspectFill" lazy-load=""></image>
+			<image style="border-radius: 35rpx;box-shadow: 0 2rpx 6rpx 0; width: 380rpx; height: 380rpx;" :src="coverImg" mode="aspectFill" lazy-load=""></image>
 		</view>
 		<view class="flex align-center justify-center font" style="color:#7a8388;height: 65rpx;padding-top: 50rpx;">
 			<view class="">{{formatTime(currentTime)}}</view>
@@ -77,8 +77,8 @@
 						 <text class="flex-1 text-ellipsis">{{item.audioName}}</text>
 						 <text class="flex-1 text-ellipsis">{{item.singerName}}</text>
 						 <view class="flex-1 flex ml-3 align-center">
-							 <text class="mr-2">播放</text>
-							 <myIcon type="icon-bofangsanjiaoxing" size="40"></myIcon>
+							 <text class="mr-2">{{item.playStatus === 1 ? '暂停' : '播放'}}</text>
+							 <myIcon :type="item.playStatus ? 'icon-zanting' : 'icon-bofangsanjiaoxing'" size="40"></myIcon>
 						 </view>
 					 </view>
 				 </block>
@@ -116,7 +116,8 @@
 			...mapGetters('audio', [
 				'audioName',
 				'singerName',
-				'singerSynopsis'
+				'singerSynopsis',
+				'coverImg'
 			])
 		},
 		methods: {
